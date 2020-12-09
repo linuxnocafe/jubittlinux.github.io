@@ -14,7 +14,9 @@ Neste exemplo estou usando Debian 9 e Windows Server 2012 R2, contudo a versão 
 
 Primeiro temos que instalar os pacotes abaixo:
 
-> \# sudo apt-get install sssd realmd -y
+```
+# sudo apt-get install sssd realmd -y
+```
 
 O Debian deve estar apto a resolver o domínio Active Directory para que possa ingressar. Temos que verificar o servidor DNS em /etc/resolv.conf e confirmar se algum dos DNS’s é referente ao servidor que queremos ingressar.
 

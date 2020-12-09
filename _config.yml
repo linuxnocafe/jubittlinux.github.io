@@ -30,9 +30,10 @@ footer_icons:
 paginate: 5
 
 
-markdown: redcarpet
-  redcarpet:
-    extensions: ['smart']
+markdown: kramdown
+kramdown:
+  typographic_symbols:
+      ndash: —
 
 
 exclude:

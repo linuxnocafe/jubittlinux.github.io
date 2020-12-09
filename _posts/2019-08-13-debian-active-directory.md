@@ -14,7 +14,7 @@ Neste exemplo estou usando Debian 9 e Windows Server 2012 R2, contudo a versão 
 
 Primeiro temos que instalar os pacotes abaixo:
 
-```consolle
+```bash
 # sudo apt-get install sssd realmd -y
 ```
 

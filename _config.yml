@@ -29,7 +29,11 @@ footer_icons:
 
 paginate: 5
 
-markdown: kramdown
+
+markdown: redcarpet
+  redcarpet:
+    extensions: ['smart']
+
 
 exclude:
   - Gemfile

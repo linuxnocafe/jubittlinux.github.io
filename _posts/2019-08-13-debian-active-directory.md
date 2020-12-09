@@ -22,7 +22,7 @@ O Debian deve estar apto a resolver o domínio Active Directory para que possa i
 
 Para ingressar no domínio usaremos o comando “realm join”, como mostrado abaixo. É necessário especificar o nome do usuário do domínio que tem privilégios para ingressar a estação.
 
-> \# realm join --user=administrator example.com  
+> \# realm join \-\-user=administrator example.com  
 Password for administrator:
 
 Uma vez digitada a senha da conta solicitada, os arquivos /etc/sssd/sssd.conf e /etc/krb.conf serão configurados. Isso é muito bom porque editar estes arquivos manualmente pode ocasionar diversos tipos de problemas quando ingressando no domínio. O arquivo /etc/krb5.keytab também é criado durante o processo.

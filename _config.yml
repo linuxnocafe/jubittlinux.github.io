@@ -33,7 +33,7 @@ paginate: 5
 markdown: kramdown
 kramdown:
   typographic_symbols:
-      ndash: —
+      ndash: -
 
 
 exclude:

@@ -1,3 +1,4 @@
+
 title: minima-reboot
 author: GitHub User
 email: your-email@domain.com
@@ -6,7 +7,6 @@ description: >
   default minima theme. It is simple, lightweight, and responsive.
   You can use it with your GitHub Pages site by adding the line
   "theme: aterenin/minima-reboot" to _config.yml.
-
 plugins:
   - jekyll-seo-tag
   - jekyll-paginate
@@ -29,12 +29,7 @@ footer_icons:
 
 paginate: 5
 
-
 markdown: kramdown
-kramdown:
-  typographic_symbols:
-      ndash: -
-
 
 exclude:
   - Gemfile

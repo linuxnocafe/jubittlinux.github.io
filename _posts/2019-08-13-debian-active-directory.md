@@ -10,6 +10,15 @@ Há inúmeros meios de se fazer isso, porém o jeito mais fácil que encontrei f
 
 Neste exemplo estou usando Debian 9 e Windows Server 2012 R2, contudo a versão de Windows não importa. Estamos assumindo que o nosso domínio já está preparado e configurado. Nós estamos simplesmente ingressando o Debian no domínio existente.
 
+
+{% highlight ruby %}
+def print_hi(name)
+  puts "Hi, #{name}"
+end
+print_hi('Tom')
+#=> prints 'Hi, Tom' to STDOUT.
+{% endhighlight %}
+
 Teste:
 
 ```console

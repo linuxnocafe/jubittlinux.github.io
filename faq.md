@@ -1,7 +1,7 @@
 ---
 layout: page
-title: FAQ
-permalink: /FAQ/
+title: Perguntas mais frequentes
+permalink: /perguntas/
 ---
 
 #### 1. De onde vem a palavra Linux?

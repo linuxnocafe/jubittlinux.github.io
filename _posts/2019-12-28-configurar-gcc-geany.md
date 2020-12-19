@@ -36,10 +36,12 @@ O GCC (GNU Compiler Collection) é um conjunto de compiladores de linguagem de p
 Construir    | gcc -Wall     | -o "%e" "%f"
 Construir    | gcc -Wall     | -c "%f"   
 
+
 Na seção "Executar comandos" verifique se o rótulo "Executar" já está disponível e configurado. Assim:  
 
 ------------ | ------------- 
 Executar     | ./%e
+
 
 Clique em [ OK ]. Escreva um programa em C e salve com a extensão .c. Por exemplo, "meu-programa.c". Aperte [ F9 ] para construir e [ F5 ] para executar.
 

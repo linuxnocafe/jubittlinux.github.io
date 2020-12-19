@@ -17,6 +17,6 @@ Atualmente, o Linux alcançou uma extensão tão grande que as distribuições d
 
 Para saber mais sobre o software livre, é possível encontrar grande quantidade de informações em:
 
-[https://www.gnu.org/philosophy/philosophy.pt-br.html](https://www.gnu.org/philosophy/philosophy.pt-br.html)
+[https://www.gnu.org/philosophy/philosophy.pt-br.html](https://www.gnu.org/philosophy/philosophy.pt-br.html){:target="_blank"}
 
 Fonte: Curso prático de Linux - Ferrari, Fabrício Augusto 

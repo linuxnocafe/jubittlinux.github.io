@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Perguntas mais frequentes
+title: Perguntas
 permalink: /perguntas/
 ---
 

@@ -15,10 +15,13 @@ body {
 }
 
 .social-media {
-  padding: 2rem 2rem 2rem 2rem;
   float: right;
   align-content: right;
   text-align: right;
+}
+
+a.social-media {
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
 }
 
 #nav-container {

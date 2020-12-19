@@ -7,10 +7,11 @@ body {
   background-color: $layout-color-background;
 }
 
-p.social-media {
+.social-media {
   float: right;
   align-content: right;
   text-align: right;
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
 }
 
 #nav-header {

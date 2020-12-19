@@ -2,7 +2,11 @@
 title: Teste
 email: your-email@domain.com
 description: >
-  Os melhores tutoriais do mundo free software você encontra aqui.
+Linux no café começou em 2014 no intuito de 
+disseminar o conceito de software livre.
+Guias e tutoriais em uma leitura agradável e de qualidade.
+Não veículamos anúncios.
+
 plugins:
   - jekyll-seo-tag
   - jekyll-paginate
@@ -17,17 +21,14 @@ header_pages:
 - perguntas.md
 
 footer_icons:
-- username: >>> Terminal Root
+- username: Terminal Root
   url: https://terminalroot.com.br/
-- username: >>> Projeto Root
+- username: Projeto Root
   url: https://www.youtube.com/user/projetoroot
-- username: >>> Rob Braxman Tech
+- username: Rob Braxman Tech
   url: https://www.youtube.com/c/BraxMe/featured
-- username: >>> Cyberspatial
+- username: Cyberspatial
   url: https://www.youtube.com/cyberspatial
-- username: >>> edureka!
-  url: https://www.youtube.com/user/edurekaIN
-
 
 paginate: 5
 

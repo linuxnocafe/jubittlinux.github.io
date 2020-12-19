@@ -15,7 +15,7 @@ minima_reboot:
 
 header_pages:
 - posts.md
-- faq.md
+- perguntas.md
 
 footer_icons:
 - username: aterenin/minima-reboot/

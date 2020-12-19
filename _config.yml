@@ -17,13 +17,16 @@ header_pages:
 - perguntas.md
 
 footer_icons:
-- username: aterenin/minima-reboot/
-  url: https://github.com/aterenin/minima-reboot/
-- username: aterenin/minima-reboot/
-  url: https://github.com/aterenin/minima-reboot/
-- username: aterenin/minima-reboot/
-  url: https://github.com/aterenin/minima-reboot/
-  icon: icon-github.svg
+- username: Terminal Root
+  url: https://terminalroot.com.br/
+- username: Projeto Root
+  url: https://www.youtube.com/user/projetoroot
+- username: Rob Braxman Tech
+  url: https://www.youtube.com/c/BraxMe/featured
+- username: Cyberspatial
+  url: https://www.youtube.com/cyberspatial
+- username: edureka!
+  url: https://www.youtube.com/user/edurekaIN
 
 
 paginate: 5

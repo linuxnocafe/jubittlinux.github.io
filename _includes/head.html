@@ -3,6 +3,31 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <!-- Meta -->
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+	<meta name="generator" content="Jekyll">
+	<meta content='Juliana Bittencourt Feres de Souza' name='author'/>
+	<meta name="twitter:creator" content="@linuxnocafe" />
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:image" content="/img/logo-linuxnocafe.png">
+  <!-- This property is for the article title, not site title. -->
+  <meta name="twitter:title" content="{{page.title}}" />
+	<meta name="twitter:image:src" content="{{ site.url }}img/favicon.png">
+	<meta content='@linuxnocafe' name='twitter:site'/>
+	<meta content='@linuxnocafe' name='twitter:creator'/>
+	<meta content='https://www.facebook.com/linuxnocafe' property='article:publisher'/>
+	<meta name="robots" content="index, follow" />
+	<meta content='id' name='geo.country'/>
+	<meta content='Brazil' name='geo.placename'/>
+	<meta property="og:image" content="/img/logo-linuxnocafe.png">
+	<meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+	<meta property="og:description" content="{{ page.description }}">
+	<meta property="og:url" content="{{ site.url }}{{ page.url }}">
+  
+  <!-- Favicon -->
+  <link rel="shortcut icon" type="image/png" href="img/tux.png">
+  
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
   
   <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">

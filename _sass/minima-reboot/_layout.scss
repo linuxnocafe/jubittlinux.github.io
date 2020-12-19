@@ -9,7 +9,8 @@ body {
 
 #nav-header {
   /* ALTERADO */
-  border-top: 5px solid !important;
+  border-top: 5px solid;
+  /* border-top: 5px solid !important; */
   padding-top: 1rem;
   /* border-bottom: 1px solid $layout-color-border !important; */
 }

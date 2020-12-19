@@ -5,6 +5,7 @@ header: Configurando o GCC na IDE Geany
 ---
 
 Geany é uma IDE (Integrated Development Environment), ou Ambiente de Desenvolvimento Integrado, pouco conhecida mas muito leve e eficiente. Tem suporte a muitas linguagens. Algumas delas são: C, Java, PHP, Python, Perl, Pascal, HTML. Está disponível para Linux, FreeBSD, NetBSD, OpenBSD, MacOS X, AIX v5.3, Solaris Express e Windows. Geralmente, roda em qualquer plataforma com suporte às biliotecas GTK+.  
+
 Principais funcionalidades:  
 - Destaque colorido para sintaxe;  
 - Dobramento de código (parcialmente implementado);  
@@ -19,20 +20,31 @@ Principais funcionalidades:
 
 Instalando Geany no Arch:
 
-> $ sudo pacman -S geany
+```console
+$ sudo pacman -S geany
+```
 
 Instalando Geany no Debian e derivados:
 
-> $ sudo apt install geany
+```console
+$ sudo apt install geany
+```
 
 O GCC (GNU Compiler Collection) é um conjunto de compiladores de linguagem de programação. Originalmente suportava somente a linguagem C e era denominado GNU C Compiler. Posteriormente ganhou suporte à outras linguagens. Para configurá-lo na Geany acesse o menu "Construir >> Definir comandos de construção". Na seção "Comandos independentes" adicione as seguintes configurações:  
+
+First Header | Second Header | Thirdy Header
+------------ | ------------- | -------------
+Construir    | gcc -Wall     | -o "%e" "%f"
+Construir    | gcc -Wall     | -c "%f" 
 
 > Construir   gcc -Wall -o "%e" "%f"  
 > Compilar    gcc -Wall -c "%f"  
 
 Na seção "Executar comandos" verifique se o rótulo "Executar" já está disponível e configurado. Assim:  
 
-> Executar   ./%e
+First Header | Second Header 
+------------ | ------------- 
+Executar     | ./%e
 
 Clique em [ OK ]. Escreva um programa em C e salve com a extensão .c. Por exemplo, "meu-programa.c". Aperte [ F9 ] para construir e [ F5 ] para executar.
 
@@ -40,5 +52,7 @@ No diretório em que foi criado o programa vai aparecer um segundo objeto com o 
 
 Então, no terminal, execute:  
 
-> $ ./meu-programa  
+```console
+$ ./meu-programa 
+```
 

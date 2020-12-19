@@ -29,7 +29,7 @@ footer_icons:
   url: https://github.com/aterenin/minima-reboot/
 - username: aterenin/minima-reboot/
   url: https://github.com/aterenin/minima-reboot/
-  icon: Linkedin-icon.png
+  icon: linkedin.svg
 
 
 paginate: 5

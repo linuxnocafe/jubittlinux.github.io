@@ -7,18 +7,18 @@ body {
   background-color: $layout-color-background;
 }
 
-p.social-media {
-  padding: 1rem 1rem 1rem 1rem;
-  float: right;
-  align-content: right;
-  text-align: right;
-}
-
 #nav-header {
   border-top: 5px solid !important;
   padding-top: 1rem;
   padding-bottom: 1rem;
   border-bottom: 1px solid $layout-color-border !important;
+}
+
+.social-media {
+  padding: 1rem 1rem 1rem 1rem;
+  float: right;
+  align-content: right;
+  text-align: right;
 }
 
 #nav-container {

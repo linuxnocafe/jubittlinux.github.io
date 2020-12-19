@@ -30,7 +30,7 @@ foo
 
 Primeiro temos que instalar os pacotes abaixo:
 
-```bash
+```console
 # sudo apt-get install sssd realmd -y
 ```
 
@@ -40,13 +40,16 @@ O Debian deve estar apto a resolver o domínio Active Directory para que possa i
 
 Para ingressar no domínio usaremos o comando “realm join”, como mostrado abaixo. É necessário especificar o nome do usuário do domínio que tem privilégios para ingressar a estação.
 
+```console
 > \# realm join \-\-user=administrator example.com  
 Password for administrator:
+```
 
 Uma vez digitada a senha da conta solicitada, os arquivos /etc/sssd/sssd.conf e /etc/krb.conf serão configurados. Isso é muito bom porque editar estes arquivos manualmente pode ocasionar diversos tipos de problemas quando ingressando no domínio. O arquivo /etc/krb5.keytab também é criado durante o processo.
 
 Podemos confirmar que ingressamos no domínio executando o comando “realm list”, como mostrado abaixo:
 
+```console
 > \# realm list  
 example.com  
 type: kerberos  
@@ -62,29 +65,39 @@ required-package: adcli
 required-package: samba-common-tools  
 login-formats: %U@example.com  
 login-policy: allow-realm-logins  
+```
 
 Uma vez concluído com sucesso, um objeto referente a estação será criado no Active Directory no container referente a “computers”.  
 Agora que ingressamos no domínio podemos fazer alguns testes. Por padrão, se queremos especificar algum usuário temos que especificar também o nome do domínio. Por exemplo, com o comando “id” abaixo não obtemos nada para “administrator”, porém “administrator@example.com” mostra a UID da conta, bem como os grupos a que esta conta pertence no domínio Active Directory.  
 
+```console
 > \# id administrator  
 id: administrator: no such user
-
+```
+```console
 > \# id administrator@example.com  
-uid=1829600500(administrator@example.com) gid=1829600513(domain users@example.com) groups=1829600513(domain users@example.com),1829600512(domain admins@example.com),1829600572(denied rodc password replication group@example.com),1829600519(enterprise admins@example.com),1829600518(schema admins@example.com),1829600520(group policy creator owners@example.com)  
+uid=1829600500(administrator@example.com) gid=1829600513(domain users@example.com) groups=1829600513(domain users@example.com),1829600512(domain admins@example.com),1829600572(denied rodc password replication group@example.com),1829600519(enterprise admins@example.com),1829600518(schema admins@example.com),1829600520(group policy creator owners@example.com)
+```
 
 Nós podemos modificar este comportamente modificando o arquivo /etc/sssd/sssd.conf, nas seguintes linhas:  
 
+```console
 > use_fully_qualified_names = True  
 fallback_homedir = /home/%u@%d  
+```
 
 Modifique de acordo com as linhas abaixo, que não requerem um FQDN (fully qualified domain name) a ser especificado. Isso também modifica o comportamente do diretório /home evitando que tenha um FQDN especificado depois do nome do usuário.  
 
+```console
 > use_fully_qualified_names = False  
-fallback_homedir = /home/%u  
+fallback_homedir = /home/%u 
+```
 
 Para aplicar as mudanças reinicie o sssd:  
 
+```console
 > \# systemctl restart sssd  
+```
 
 Agora estaremos aptos a encontrar contas de usuários sem especificar o domínio. Ver exemplo abaixo:  
 

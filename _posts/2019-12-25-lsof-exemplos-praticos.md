@@ -54,7 +54,7 @@ FIFO - First In First Out
 ```
 
 ```console
-> \# lsof -i 6
+# lsof -i 6
 ```
 
 5) Listar arquivos abertos no intervalo de portas TCP 1-1024:
@@ -78,13 +78,13 @@ FIFO - First In First Out
 8) Listar processos pelo PID. No exemplo a seguir listamos processos pelo PID 1:
 
 ```console
-> \# lsof -p 1
+# lsof -p 1
 ```
 
 9) Matar/encerrar toda atividade de um usuário específico:
 
 ```console
-# kill -9 lsof -t -u usuario
+# kill -9 `lsof -t -u usuario`
 ```
 
 Até a próxima!

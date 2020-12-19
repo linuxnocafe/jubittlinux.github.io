@@ -41,7 +41,7 @@ O Debian deve estar apto a resolver o domínio Active Directory para que possa i
 Para ingressar no domínio usaremos o comando “realm join”, como mostrado abaixo. É necessário especificar o nome do usuário do domínio que tem privilégios para ingressar a estação.
 
 ```console
-> \# realm join \-\-user=administrator example.com  
+# realm join --user=administrator example.com  
 Password for administrator:
 ```
 
@@ -50,7 +50,7 @@ Uma vez digitada a senha da conta solicitada, os arquivos /etc/sssd/sssd.conf e 
 Podemos confirmar que ingressamos no domínio executando o comando “realm list”, como mostrado abaixo:
 
 ```console
-> \# realm list  
+# realm list  
 example.com  
 type: kerberos  
 realm-name: EXAMPLE.COM  
@@ -71,11 +71,11 @@ Uma vez concluído com sucesso, um objeto referente a estação será criado no 
 Agora que ingressamos no domínio podemos fazer alguns testes. Por padrão, se queremos especificar algum usuário temos que especificar também o nome do domínio. Por exemplo, com o comando “id” abaixo não obtemos nada para “administrator”, porém “administrator@example.com” mostra a UID da conta, bem como os grupos a que esta conta pertence no domínio Active Directory.  
 
 ```console
-> \# id administrator  
+# id administrator  
 id: administrator: no such user
 ```
 ```console
-> \# id administrator@example.com  
+# id administrator@example.com  
 uid=1829600500(administrator@example.com) gid=1829600513(domain users@example.com) groups=1829600513(domain users@example.com),1829600512(domain admins@example.com),1829600572(denied rodc password replication group@example.com),1829600519(enterprise admins@example.com),1829600518(schema admins@example.com),1829600520(group policy creator owners@example.com)
 ```
 

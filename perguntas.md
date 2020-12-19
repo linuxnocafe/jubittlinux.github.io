@@ -46,3 +46,4 @@ permalink: /perguntas/
 #### 14. Várias pessoas distribuem cópias de Windows ou a instalam livremente.
 > Isso é pirataria. Para usar Windows o usuário deve pagar uma licença. Windows é um software proprietário com direitos pertencentes à Microsoft. Por isso paga-se uma licença.
 
+![Pinguim Tux com dúvidas](https://raw.githubusercontent.com/JubittLinux/jubittlinux.github.io/master/img/linux_question.jpg)

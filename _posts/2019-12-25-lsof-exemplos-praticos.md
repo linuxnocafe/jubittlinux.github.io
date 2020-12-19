@@ -9,7 +9,9 @@ A seguir vamos ver alguns exemplos para o comando lsof.
 
 1) Lista todos os arquivos abertos:
 
-> \# lsof
+```console
+# lsof
+```
 
 ![Exemplo lsof](https://raw.githubusercontent.com/linuxnocafe/linuxnocafe.github.io/master/img/lsof-sample.png)
 
@@ -35,37 +37,54 @@ FIFO - First In First Out
 
 2) Listar arquivos abertos por determinado usuário:
 
-> \# lsof -u usuario
+```console
+# lsof -u usuario
+```
 
 3) Achar processos rodando em uma porta específica:
 
-> \# lsof -i TCP:53
+```console
+# lsof -i TCP:53
+```
 
 4) Listar somente arquivos abertos com protocolo IPv4 ou IPv6:
 
-> \# lsof -i 4
+```console
+# lsof -i 4
+```
 
+```console
 > \# lsof -i 6
+```
 
 5) Listar arquivos abertos no intervalo de portas TCP 1-1024:
 
-> \# lsof -i TCP:1-1024
+```console
+# lsof -i TCP:1-1024
+```
 
 6) Listar arquivos abertos por processos excluindo um determinado usuário:
 
-> \# lsof -i -u^usuario
+```console
+# lsof -i -u^usuario
+```
 
 7) Listar todas as conexões:
 
-> \# lsof -i
+```console
+# lsof -i
+```
 
 8) Listar processos pelo PID. No exemplo a seguir listamos processos pelo PID 1:
 
+```console
 > \# lsof -p 1
+```
 
 9) Matar/encerrar toda atividade de um usuário específico:
 
-> \# kill -9 \`lsof -t -u usuario`
-
+```console
+# kill -9 lsof -t -u usuario
+```
 
 Até a próxima!

@@ -30,18 +30,20 @@ Instalando Geany no Debian e derivados:
 $ sudo apt install geany
 ```
 
-O GCC (GNU Compiler Collection) é um conjunto de compiladores de linguagem de programação. Originalmente suportava somente a linguagem C e era denominado GNU C Compiler. Posteriormente ganhou suporte à outras linguagens. Para configurá-lo na Geany acesse o menu "Construir >> Definir comandos de construção". Na seção "Comandos independentes" adicione as seguintes configurações:  
+O GCC (GNU Compiler Collection) é um conjunto de compiladores de linguagem de programação. Originalmente suportava somente a linguagem C e era denominado GNU C Compiler. Posteriormente ganhou suporte à outras linguagens. Para configurá-lo na Geany acesse o menu "Construir >> Definir comandos de construção". 
+
+Na seção "Comandos independentes" adicione as seguintes configurações:  
 
 Construir -> gcc -Wall -o "%e" "%f"  
-Construir -> gcc -Wall -c "%f"     
+Construir -> gcc -Wall -c "%f"    
+
+Na seção "Executar comandos" adicione o seguinte:
 Execute ->  ./%e                
 
 Deve ficar como a seguir:
 
 ![Comandos independentes](https://raw.githubusercontent.com/JubittLinux/jubittlinux.github.io/master/img/geany-gcc-1.png)
-
-Na seção "Executar comandos" verifique se o rótulo "Executar" já está disponível e configurado. Assim:  
-
+ 
 Clique em [ OK ]. Escreva um programa em C e salve com a extensão .c. Por exemplo, "meu-programa.c". Aperte [ F9 ] para construir e [ F5 ] para executar.
 
 No diretório em que foi criado o programa vai aparecer um segundo objeto com o mesmo nome, mas sem extensão ponto c.

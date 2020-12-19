@@ -7,6 +7,10 @@ body {
   background-color: $layout-color-background;
 }
 
+p.social-media {
+  align-content: right;
+}
+
 #nav-header {
   border-top: 5px solid !important;
   padding-top: 1rem;
@@ -60,9 +64,6 @@ body {
   border-top: 1px solid $layout-color-border;
 }
 
-p.social-media {
-  align-content: right;
-}
 .highlight pre {
   border: 1px solid $layout-color-border;
   border-radius: .25rem;

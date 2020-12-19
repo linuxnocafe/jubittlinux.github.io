@@ -38,6 +38,7 @@ Construir -> gcc -Wall -o "%e" "%f"
 Construir -> gcc -Wall -c "%f"    
 
 Na seção "Executar comandos" adicione o seguinte:
+
 Execute ->  ./%e                
 
 Deve ficar como a seguir:

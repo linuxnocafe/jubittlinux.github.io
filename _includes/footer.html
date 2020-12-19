@@ -19,8 +19,7 @@
             </li>
             {% if site.email %}
               <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-            {% endif %}
-           <li><i class="fal fa-copyright"></i></li>
+            {% endif %}         
         </ul>
       </div>
       {% if site.footer_icons %}
@@ -39,7 +38,8 @@
       </div>
       {% endif %}
       <div class="col-12 col-lg">
-        <p class="text-secondary text-justify">{{ site.description | escape }}</p>      
+        <p class="text-secondary text-justify">{{ site.description | escape }}</p>  
+        <ul><li><i class="fal fa-copyright"></i></li></ul>
       </div>
     </div>
 

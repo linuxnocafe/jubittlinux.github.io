@@ -20,7 +20,7 @@ minima_reboot:
 header_pages:
 - about.md
 - posts.md
-- github.md
+- faq.md
 
 footer_icons:
 - username: aterenin/minima-reboot/

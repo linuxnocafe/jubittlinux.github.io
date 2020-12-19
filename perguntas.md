@@ -3,7 +3,6 @@ layout: page
 title: Perguntas
 permalink: /perguntas/
 ---
-
 #### 1. De onde vem a palavra Linux?
 > Contração de Linus e Unix. Linus Torvalds é o criador do Linux.
 

@@ -32,10 +32,11 @@ $ sudo apt install geany
 
 O GCC (GNU Compiler Collection) é um conjunto de compiladores de linguagem de programação. Originalmente suportava somente a linguagem C e era denominado GNU C Compiler. Posteriormente ganhou suporte à outras linguagens. Para configurá-lo na Geany acesse o menu "Construir >> Definir comandos de construção". Na seção "Comandos independentes" adicione as seguintes configurações:  
 
------------- | ------------- | -------------
-Construir    | gcc -Wall     | -o "%e" "%f"
-Construir    | gcc -Wall     | -c "%f"   
-
+Rótulo       | Comando
+------------ | -----------------------
+Construir    | gcc -Wall -o "%e" "%f"
+Construir    | gcc -Wall -c "%f"   
+Execute      | ./%e
 
 Na seção "Executar comandos" verifique se o rótulo "Executar" já está disponível e configurado. Assim:  
 

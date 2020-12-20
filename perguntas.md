@@ -15,16 +15,16 @@ permalink: /perguntas/
 #### 4. Linux é difícil?
 > Não. Linux não é difícil. Mas o conhecimento e perfil do usuário devem ser compatíveis com o tipo de distribuição escolhida.
 
-#### 5. Preciso de um computador com configuração e hardware modernos?
+#### 5. Preciso de um computador com hardware moderno?
 > Não. No Linux é possível personalizar a interface gráfica e optar por uma interface que exija poucos recursos. Algumas distribuições também são desenvolvidas com foco em poucos recursos de hardware. Por isso computadores antigos também podem funcionar bem com Linux.
 
 #### 6. O que é distribuição?
-> Distribuição é um sistema operacional baseado em um kernel Linux. Um exemplo será dado a seguir. Existem vários fabricantes de carro como Ford, Volkswagen, Fiat, etc. Cada fabricante desenvolve seus modelos. Ford ecosport, Ford fusion, Ford fiesta são modelos da Ford, mas cada um com características diferentes. Coisa parecida acontece no Linux. São todos Linux na origem, isto é, no kernel (núcleo) mas cada com suas particularidades. Cada distribuição é desenvolvida para satisfazer um conjunto de necessidades. Então, openSUSE, Fedora, Arch são exemplos de sistema operacional mas são todos chamados de Linux porque compartilham do mesmo tipo de kernel (núcleo); um kernel Linux.
+> Distribuição é um sistema operacional baseado em um kernel Linux. Um exemplo será dado a seguir. Existem vários fabricantes de carro como Ford, Volkswagen, Fiat, etc. Cada fabricante desenvolve seus modelos. Ford ecosport, Ford fusion, Ford fiesta são modelos da Ford, mas cada um com características diferentes. Coisa parecida acontece no Linux. São todos Linux na origem, isto é, no kernel (núcleo) mas cada um com suas particularidades. Cada distribuição é desenvolvida para satisfazer um conjunto de necessidades. Então, openSUSE, Fedora, Arch são exemplos de sistema operacional mas são todos chamados de Linux porque compartilham do mesmo tipo de kernel (núcleo); um kernel Linux.
 
 #### 7. O que é kernel?
 > Kernel quer dizer núcleo na língua inglesa. É o cerne do sistema operacional. Serve de ponte entre os aplicativos e os dados processados a nível de hardware.
 
-#### .8 Qual distribuição devo usar?
+#### 8. Qual distribuição devo usar?
 > Deve-se escolher conforme suas necessidades e objetivos. Pode-se começar por uma distribuição voltada para o usuário doméstico, como Ubuntu ou Mint, e com o tempo, se tiver interesse em aprofundar, pode experimentar distribuições diferentes, com ênfase em servidor, por exemplo.
 
 #### 9. GNU/Linux ou Linux? São a mesma coisa?

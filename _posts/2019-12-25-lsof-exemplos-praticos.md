@@ -13,7 +13,7 @@ A seguir vamos ver alguns exemplos para o comando lsof.
 # lsof
 ```
 
-![Exemplo lsof](https://raw.githubusercontent.com/linuxnocafe/linuxnocafe.github.io/master/img/lsof-sample.png){:class="img-responsive"}
+![Exemplo lsof](https://raw.githubusercontent.com/linuxnocafe/linuxnocafe.github.io/master/img/lsof-sample.png)
 
 Onde FD significa File Descriptor e pode conter os seguintes valores:
 

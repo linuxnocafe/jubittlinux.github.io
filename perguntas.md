@@ -36,7 +36,7 @@ permalink: /perguntas/
 #### 11. Por que devo usar Linux?
 > Ninguém é obrigado a nada. Usar Linux é uma opção. É uma liberdade. Não precisamos pagar uma licença para ter acesso a um sistema operacional e software de qualidade.
 
-#### 12. Como faço para instalar uma distrinuição Linux no meu computador?
+#### 12. Como faço para instalar uma distribuição Linux no meu computador?
 > As diferentes distribuições Linux disponibilizam imagem do sistema em seus sites. Geralmente é um arquivo em formato .iso (ponto iso). É só fazer o download e gravar a imagem num dispositivo USB, como pendrive. Em seguida basta dar o boot no computador pelo USB e fazer o procedimento da instalação.
 
 #### 13. Se Linux é tão bom por que Windows está presente na grande maioria dos computadores vendidos?

@@ -4,7 +4,7 @@ description: Aprenda a configurar o compilador GCC na IDE Geany
 header: Configurando o GCC na IDE Geany
 ---
 
-Geany é uma IDE (Integrated Development Environment), ou Ambiente de Desenvolvimento Integrado, pouco conhecida mas muito leve e eficiente. Tem suporte a muitas linguagens. Algumas delas são: C, Java, PHP, Python, Perl, Pascal, HTML. Está disponível para Linux, FreeBSD, NetBSD, OpenBSD, MacOS X, AIX v5.3, Solaris Express e Windows. Geralmente, roda em qualquer plataforma com suporte às biliotecas GTK+.  
+Geany é uma IDE (Integrated Development Environment), ou Ambiente de Desenvolvimento Integrado, pouco conhecida mas muito leve e eficiente. Tem suporte a muitas linguagens (programação, marcação e estilos). Algumas delas são: C, Java, PHP, Python, Perl, Pascal, HTML. Está disponível para Linux, FreeBSD, NetBSD, OpenBSD, MacOS X, AIX v5.3, Solaris Express e Windows. Geralmente, roda em qualquer plataforma com suporte às biliotecas GTK+.  
 
 Principais funcionalidades:  
 - Destaque colorido para sintaxe;  
@@ -43,7 +43,7 @@ Execute ->  ./%e
 
 Deve ficar como a seguir:
 
-![Comandos independentes](https://raw.githubusercontent.com/JubittLinux/jubittlinux.github.io/master/img/geany-gcc-1.png)
+![Comandos independentes](https://raw.githubusercontent.com/JubittLinux/jubittlinux.github.io/master/img/geany-gcc-1.png#responsive)
  
 Clique em [ OK ]. Escreva um programa em C e salve com a extensão .c. Por exemplo, "meu-programa.c". Aperte [ F9 ] para construir e [ F5 ] para executar.
 

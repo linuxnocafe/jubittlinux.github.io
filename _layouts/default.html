@@ -18,7 +18,8 @@ layout: compress
 
     
     <!-------START-PAGINATION--------->
-
+<main aria-label="Content">
+  <div id="content-container" class="container">
 <div class="pagination">
   <ul>
     {% if paginator.previous_page %}
@@ -67,6 +68,10 @@ layout: compress
     {% endif %}
   </ul>
 </div>
+    
+  </div>
+    </main>
+    
       <!-------ENDS-PAGINATION--------->
     
     {% include footer.html %}

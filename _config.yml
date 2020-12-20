@@ -10,7 +10,6 @@ plugins:
   - jekyll-seo-tag
   - jekyll-paginate
   - jekyll-redirect-from
-  - jekyll-responsive-image
 
 minima_reboot:
   date_format: "%b %-d, %Y"

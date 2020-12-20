@@ -10,10 +10,9 @@ A primeira placa é conectada ao endereço de rede 192.168.1.0, a segunda placa 
 
 ![Rotas de rede no Linux](https://raw.githubusercontent.com/linuxnocafe/linuxnocafe.github.io/master/img/rotas.png#responsive)
 
-Tornando uma rede acessível a outra:
+A seguir tornaremos uma rede acessível a outra.
 
-Para que a rede 192.168.3.0 seja acessível de 192.168.1.0 necessitamos
-adicionar uma rota de entrada de forma que possamos pingar 192.168.3.x de 192.168.1.x. O ponto em comum é o gateway.
+Para que a rede 192.168.3.0 seja acessível de 192.168.1.0 necessitamos adicionar uma rota de entrada de forma que possamos pingar 192.168.3.x de 192.168.1.x. O ponto em comum é o gateway.
 
 Então, em cada máquina na rede 192.168.1.0 um gateway padrão será adicionado como mostrado abaixo:
 

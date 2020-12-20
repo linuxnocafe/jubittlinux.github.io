@@ -45,7 +45,6 @@ img[src*="#responsive"] {
 }
 
 #content {
-  padding-bottom: 1rem;
   h1, h2, h3, h4 {
     margin-top: 2rem;
     margin-bottom: 1rem;
@@ -83,6 +82,7 @@ img[src*="#responsive"] {
 /* -------START-PAGINATION -------- */
 .pagination {
   height: 36px;
+  padding-bottom: 1rem;
 }
 
 .pagination ul {

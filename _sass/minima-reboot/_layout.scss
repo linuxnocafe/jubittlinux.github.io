@@ -7,7 +7,7 @@ body {
   background-color: $layout-color-background;
 }
 
-.responsive {
+img[src*="#responsive"] {
   width: 100%;
   height: auto;
 }

@@ -6,20 +6,24 @@ header: Otimizando o tempo de boot do Linux
 
 O tempo de boot de um S.O. depende de vários fatores. Hardware e configurações do sistema são dois fatores.
 Veremos nest post como otimizar o boot de um sistema Linux desabilitando alguns serviços que não interferem na inicialização.
-As dicas a seguir são aplicáveis a qualquer distribuição mas neste caso estamos numa distro baseada em systemd. No meu caso estou usando Fedora 30. Meu hardware é composto por um processador Xeon 3040, 4 gb de memória ram DDR2 e um SSD.
+As dicas a seguir são aplicáveis a qualquer distribuição mas neste caso estamos numa distro baseada em systemd. 
 
+No meu caso estou usando Fedora 30. Meu hardware é composto por um processador Xeon 3040, 4 gb de memória ram DDR2 e um SSD.
 Numa primeira análise com "systemd-analyze" podemos ver algums informações onde consta o tempo de boot do sistema:
 
-> [juliana@fedora-linux ~]$ systemd-analyze  
+```console
+$ systemd-analyze  
 Startup finished in 1.703s (kernel) + 4.394s (initrd) + 11.976s (userspace) = 18.074s  
 graphical.target reached after 11.939s in userspace  
+```
 
 Devemos ter em mente que o tempo de boot mostrado acima não computa o tempo de exibição da tela de POST da BIOS. Portanto, aprender a configurar a BIOS é assunto que não abordaremos aqui, mas que pode trazer benefício reduzindo o tempo de carga do sistema como um todo.
 O tempo exibido por "systemd-analyze" é computado a partir do boot do Kernel, isto é, a partir da entrada exibida pelo grub na tela.
 
 Vamos fazer uma análise mais detalhada dos serviços usando "systemd-analyze blame":
 
-> [juliana@fedora-linux ~]$ systemd-analyze blame  
+```console
+$ systemd-analyze blame  
         11.098s dnf-makecache.service  
           6.657s gssproxy.service  
           6.285s NetworkManager-wait-online.service  
@@ -103,7 +107,7 @@ Vamos fazer uma análise mais detalhada dos serviços usando "systemd-analyze bl
             13ms tmp.mount  
              9ms sys-kernel-config.mount  
            136us iscsi-shutdown.service  
-
+```
 
 Quais serviços desabilitar?
 
@@ -119,17 +123,17 @@ Para saber quais serviços desabilitar teremos que pesquisar e estudar um pouco 
   * **lvm2-monitor.service** gerencia unidades configuradas em LVM. Se você não usa LVM pode desabilitar.
 
 
-
   * **ModemManager.service** serve para emparelhamento de aparelhos via bluetooth ou banda móvel.
 
 
   * **dvboxrv.service, vboxballoonctrl-service.service, vboxautostart-service.service, vboxweb-service.service** serviços relacionados ao VirtualBox. É seguro desabilitar.
-
-
+  
 
   * **abrtd.service** ferramenta de relatório de crash do sistema. Pode ser desabilitado para não rodar na inicialização.  
 
+
   * **cups.service** serviço de impressão.
+
 
   * **libvirtd.service** relacionado à virtualização.
 
@@ -141,25 +145,35 @@ Para saber quais serviços desabilitar teremos que pesquisar e estudar um pouco 
 
 Desabilitando um serviço:
 
-> $ sudo systemctl disable nome-do-serviço.service
+```console
+$ sudo systemctl disable nome-do-serviço.service
+```
 
 Também existe a opção mascarar o serviço. É uma opção mais forte que disable, pois não permite que o serviço se inicie de forma alguma, nem manualmente.
 
-> $ sudo systemctl mask nome-do-serviço.service 
+```console
+$ sudo systemctl mask nome-do-serviço.service
+```
 
 Para desmacarar:
 
-> $ sudo systemctl unmask nome-do-serviço.service 
+```console
+$ sudo systemctl unmask nome-do-serviço.service 
+```
 
 Após desabilitar alguns serviços analisamos de novo o tempo de boot do sistema. Conforme podemos ver houve uma pequena redução no tempo de boot.
 
-> [juliana@fedora-linux ~]$ systemd-analyze  
+```console
+$ systemd-analyze  
 Startup finished in 1.700s (kernel) + 4.570s (initrd) + 10.420s (userspace) = 16.691s  
 graphical.target reached after 10.387s in userspace  
+```
 
 Podemos também gerar um gráfico:  
 
-> $ systemd-analyze plot > boot.svg  
+```console
+$ systemd-analyze plot > boot.svg  
+```
 
 ![Gráfico do tempo de boot](https://raw.githubusercontent.com/linuxnocafe/linuxnocafe.github.io/master/img/tempo-boot-linux.png)
 

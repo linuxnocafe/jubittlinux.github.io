@@ -4,6 +4,29 @@ layout: default
 <article itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="pt-4 pb-3">
+    
+        <div id="search-demo-container">
+	      Procurar no blog: <br>
+      	<input type="text" id="search-input" style="line-height: 3.0;width: 100%;" placeholder="Digite aqui...">
+      	<ul id="results-container"></ul>
+	      </div>
+		
+	      <script src="{{ site.baseurl }}/js/simple-jekyll-search.min.js"></script>
+	
+    	  <script>
+      	window.simpleJekyllSearch = new SimpleJekyllSearch({
+        searchInput: document.getElementById('search-input'),
+        resultsContainer: document.getElementById('results-container'),
+        json: '{{ site.baseurl }}/search.json',
+        searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a></li>',
+        noResultsText: 'Nenhum resultado',
+        limit: 10,
+        fuzzy: false,
+        exclude: ['Welcome']
+      	})
+    	  </script>
+    
+    
     <h1 itemprop="name headline">{{ page.title | escape }}</h1>
     <p class="text-secondary">
       {% if page.author %}

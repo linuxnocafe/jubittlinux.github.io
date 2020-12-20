@@ -16,7 +16,7 @@ minima_reboot:
   date_format_short: "%b %-d"
 
 header_pages:
-- posts.md
+- cronologia.md
 - perguntas.md
 
 footer_icons:

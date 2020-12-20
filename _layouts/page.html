@@ -4,17 +4,16 @@ layout: default
 <article>
   
   <header class="pt-4 pb-3">
-    <h1>{{ page.title | escape }}</h1>
-    
+
       	<div id="search-demo-container">
 	      Procurar no blog: <br>
       	<input type="text" id="search-input" style="line-height: 3.0;width: 100%;" placeholder="Digite aqui...">
       	<ul id="results-container"></ul>
 	      </div>
 		
-	      <script src="{{ site.baseurl }}/js/simple-jekyll-search.min.js"></script>
+	<script src="{{ site.baseurl }}/js/simple-jekyll-search.min.js"></script>
 	
-    	  <script>
+    	<script>
       	window.simpleJekyllSearch = new SimpleJekyllSearch({
         searchInput: document.getElementById('search-input'),
         resultsContainer: document.getElementById('results-container'),
@@ -25,8 +24,9 @@ layout: default
         fuzzy: false,
         exclude: ['Welcome']
       	})
-    	  </script>
-
+    	</script>
+	  
+ 	<h1>{{ page.title | escape }}</h1>
   
   <p> HELLO HELLO </p>
     

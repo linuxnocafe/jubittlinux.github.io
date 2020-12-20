@@ -5,11 +5,6 @@ layout: home
   Posts
 <p> -->
 
-<!-- post list -->
-{% for post in paginator.posts %}
-<li><a href="{{post.url | prepend: site.baseurl}}"><h3>{{post.title}}</h3></a></li>
-{% endfor %}
-
 
 <!-- pagination -->
 {% if paginator.total_pages > 1 %}

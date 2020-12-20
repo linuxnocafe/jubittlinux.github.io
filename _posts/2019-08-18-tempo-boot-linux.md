@@ -155,7 +155,7 @@ Também existe a opção mascarar o serviço. É uma opção mais forte que disa
 $ sudo systemctl mask nome-do-serviço.service
 ```
 
-Para desmacarar:
+Para desmascarar:
 
 ```console
 $ sudo systemctl unmask nome-do-serviço.service 

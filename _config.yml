@@ -30,6 +30,12 @@ footer_icons:
 
 paginate: 5
 
+paginate:
+    root: /blog/
+    limit: false
+    page_amount: 5
+    title_label: Pagination
+
 markdown: kramdown
 
 exclude:

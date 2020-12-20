@@ -4,7 +4,7 @@ email: your-email@domain.com
 description: >
   Guias e tutoriais.
   Linux no café começou em 2014 no intuito de disseminar o conceito de software livre.
-  Não veículamos anúncios.
+  Não veiculamos anúncios.
 
 plugins:
   - jekyll-seo-tag

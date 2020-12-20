@@ -47,12 +47,6 @@ layout: default
   </div>
   {% endif %}
   
-  
-  {% if site.paginate %}
-    {% assign posts = paginator.posts %}
-  {% else %}
-    {% assign posts = site.posts %}
-  {% endif %}
 
    {% if site.plugins contains "jekyll-feed" %}
     <a href="{{ "/feed.xml" | relative_url }}"><div id="rss-icon" class="mb-2"></div></a>

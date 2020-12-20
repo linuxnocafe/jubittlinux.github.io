@@ -32,7 +32,7 @@ layout: default
     {% endfor %}
   </ul>
 
-  {% if site.paginate %}
+  <!-- {% if site.paginate %}
   <nav class="py-1" aria-label="Blog page navigation">
     {% if paginator.previous_page %}
       <a href="{{ paginator.previous_page_path | relative_url }}">&laquo; Previous</a>
@@ -44,7 +44,9 @@ layout: default
       <a href="{{ paginator.next_page_path | relative_url }}">Next &raquo;</a>
     {% endif %}
   </nav>
-  {% endif %}
+  {% endif %} -->
+  
+  
 
   {% if site.plugins contains "jekyll-feed" %}
     <a href="{{ "/feed.xml" | relative_url }}"><div id="rss-icon" class="mb-2"></div></a>

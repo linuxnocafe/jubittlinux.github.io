@@ -32,7 +32,7 @@ layout: default
   </ul>
 
   {% if site.paginate %}
-  <!-- <nav class="py-1" aria-label="Blog page navigation"> -->
+  <nav class="py-1" aria-label="Blog page navigation">
     {% if paginator.previous_page %}
       <a href="{{ paginator.previous_page_path | relative_url }}">&laquo; Previous</a>
     {% endif %}
@@ -42,8 +42,10 @@ layout: default
     {% if paginator.next_page %}
       <a href="{{ paginator.next_page_path | relative_url }}">Next &raquo;</a>
     {% endif %}
-  <!-- </nav> -->
+  </nav>
   {% endif %}
+  
+  {% include index.html %}
   
   {% if site.paginate %}
     {% assign posts = paginator.posts %}

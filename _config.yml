@@ -29,6 +29,7 @@ footer_icons:
   url: https://www.youtube.com/cyberspatial
 
 paginate: 5
+paginate_path: /page:num/
 
 markdown: kramdown
 

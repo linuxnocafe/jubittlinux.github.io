@@ -175,7 +175,7 @@ Podemos também gerar um gráfico:
 $ systemd-analyze plot > boot.svg  
 ```
 
-![Gráfico do tempo de boot](https://raw.githubusercontent.com/linuxnocafe/linuxnocafe.github.io/master/img/tempo-boot-linux.png#responsive)
+![Gráfico do tempo de boot](https://raw.githubusercontent.com/linuxnocafe/linuxnocafe.github.io/master/img/tempo-boot-linux.png)
 
 Este foi o resultado obtido numa primeira triagem. Podemos pesquisar mais e refinar mais ainda o processo de boot.
 Espero ter ajudado.

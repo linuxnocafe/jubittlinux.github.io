@@ -1,6 +1,6 @@
 ---
 layout: allposts
-title: Posts
+title: Cronologia
 description: Blog posts
-permalink: /posts/
+permalink: /cronologia/
 ---

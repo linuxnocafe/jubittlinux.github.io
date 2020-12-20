@@ -32,7 +32,7 @@ paginate: 5
 
 paginate:
     root: /blog/
-    limit: false
+    limit: true
     page_amount: 5
     title_label: Pagination
 

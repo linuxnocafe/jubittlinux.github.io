@@ -8,7 +8,7 @@ body {
 }
 
 img[src*="#responsive"] {
-  width: auto;
+  max-width: auto;
   height: auto;
 }
   

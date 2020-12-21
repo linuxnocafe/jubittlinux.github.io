@@ -22,20 +22,29 @@ Para executar um AppImage baixe o arquivo desejado. Aqui no nosso exemplo ele se
 
 Entre no diretório onde baixou:
 
-> $ cd ~/Downloads/
+```console
+$ cd ~/Downloads/
+```
 
 Dê permissão de execução:
 
-> $ chmod +x aplicativo.AppImage
+```console
+$ chmod +x aplicativo.AppImage
+```
 
 Execute da sequinte forma:
 
-> $ ./aplicativo.AppImage
+```console
+$ ./aplicativo.AppImage
+```
 
 Para criar um lançador no menu de programas (atalho):
 
-> $ sudo chmod ugo+x Downloads/aplicativo.AppImage
-
-> $ sudo cp Downloads/aplicativo.AppImage /usr/bin/
+```console
+$ sudo chmod ugo+x Downloads/aplicativo.AppImage
+```
+```console
+$ sudo cp Downloads/aplicativo.AppImage /usr/bin/
+```
 
 Até a próxima!

@@ -24,12 +24,13 @@ layout: default
         exclude: ['Welcome']
       	})
     	</script>
-    
+	  
+    <h1 itemprop="name headline">{{ page.title | escape }}</h1>
+	  
     <!---Gallery------->
 	  {% include image-gallery.html folder="/img" %}
     <!---Ends-Gallery----->
 	  
-    <h1 itemprop="name headline">{{ page.title | escape }}</h1>
     <p class="text-secondary">
       {% if page.author %}
         {% if page.author_url %}

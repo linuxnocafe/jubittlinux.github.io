@@ -35,15 +35,10 @@ CONTAINER=dockbix-agent-xxl
 RUNNING=$(docker inspect --format="{{ .State.Running }}" $CONTAINER)
 
 if [ "$RUNNING" == true ]; then
-	echo "##############################################################"
 	echo "$CONTAINER is running!!!"
-	echo "##############################################################"
 	exit 0
 else
-	echo "##############################################################"
-	echo "$CONTAINER is not running. Starting container now!"
-	echo "##############################################################"
-	
+	echo "$CONTAINER is not running. Starting container now!!!"
 	docker stop dockbix-agent-xxl
         docker rm dockbix-agent-xxl
 	docker run --name=dockbix-agent-xxl -p 10050:10050  

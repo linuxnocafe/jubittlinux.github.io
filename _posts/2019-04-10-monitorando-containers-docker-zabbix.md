@@ -43,7 +43,7 @@ else
         docker rm dockbix-agent-xxl
 	docker run --name=dockbix-agent-xxl -p 10050:10050  
 	--privileged -v /:/rootfs -v /var/run:/var/run  
-	-e "ZA_Server=IP_ADD" -e "ZA_ServerActive=IP_ADD"  
+	-e "ZA_Server=IP_address" -e "ZA_ServerActive=IP_address"  
 	-d monitoringartist/dockbix-agent-xxl-limited:latest
         exit 0
 fi	

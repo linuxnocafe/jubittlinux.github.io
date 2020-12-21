@@ -10,7 +10,7 @@ Como sugestão de automatização, a tarefa deve ser agendada no cron do sistema
 
 Segue a dica:
 
-```{console, attr.source='.numberLines'}
+```{bash, attr.source='.numberLines'}
 #!/bin/bash  
 for file in /path/to/\*.log  
 do  

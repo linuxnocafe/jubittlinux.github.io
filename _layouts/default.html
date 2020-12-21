@@ -17,10 +17,6 @@ layout: compress
     </main>
     
     {% include footer.html %}
-  
-    <!-- Start-Lightbox -->
-    <script type="text/javascript" src="/js/lightbox.js"></script>
-    <!-- End-Lightbox -->
     
     <!-- Start-Lightbox -->
     {% for item in page.images %}
@@ -37,6 +33,11 @@ layout: compress
 </div>
     {% endfor %}
     <!-- End-Lightbox -->
+    
+    <!-- Lightbox -->
+    <script type="text/javascript" src="/js/lightbox.js"></script>
+    <link rel="stylesheet" href="/_sass/lightbox.css">
+    <!-------------->
     
   </body>
 

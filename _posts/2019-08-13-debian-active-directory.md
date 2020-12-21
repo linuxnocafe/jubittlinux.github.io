@@ -10,7 +10,7 @@ Há inúmeros meios de se fazer isso, porém o jeito mais fácil que encontrei f
 
 Neste exemplo estou usando Debian 9 e Windows Server 2012 R2, contudo a versão de Windows não importa. Estamos assumindo que o nosso domínio já está preparado e configurado. Nós estamos simplesmente ingressando o Debian no domínio existente.
 
-```console
+```bash
 foo@bar:~$ whoami
 foo
 ```
@@ -19,7 +19,7 @@ foo
 
 Primeiro temos que instalar os pacotes abaixo:
 
-```console
+```bash
 # sudo apt install sssd realmd -y
 ```
 
@@ -29,7 +29,7 @@ O Debian deve estar apto a resolver o domínio Active Directory para que possa i
 
 Para ingressar no domínio usaremos o comando “realm join”, como mostrado abaixo. É necessário especificar o nome do usuário do domínio que tem privilégios para ingressar a estação.
 
-```console
+```bash
 # realm join --user=administrator example.com  
 Password for administrator:
 ```

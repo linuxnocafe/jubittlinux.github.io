@@ -30,7 +30,7 @@ A implementação deve ser feita conforme a orientação disponibilizada no dock
 Como sugestão corretiva a uma limitação da versão Freeware disponibilizamos um script para que você possa automatizar a execução do container do Dockbix. Trata-se de um script a ser inserido na crontab de seu sistema Linux para que periodicamente este possa verificar se o Dockbix está de pé. Caso não esteja de pé o mesmo será iniciado.  
 
 ```bash
-!/bin/bash
+#!/bin/bash
 CONTAINER=dockbix-agent-xxl
 RUNNING=$(docker inspect --format="{{ .State.Running }}" $CONTAINER)
 

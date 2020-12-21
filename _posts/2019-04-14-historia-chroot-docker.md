@@ -4,9 +4,7 @@ description: Do chroot ao Docker, uma breve história
 header: Introdução à história dos conteiners
 ---
 
-Ema março de 2018 o Docker completou cinco anos de existência.
-
-Mas essa não foi a primeira vez que ouvimos falar em conteiners. Em homenagem ao Docker, vamos fazer uma viagem ao passado e dar uma olhada nos principais marcos da vida útil dos conteiners virtualizados.
+Ema março de 2018 o Docker completou cinco anos de existência. Mas essa não foi a primeira vez que ouvimos falar em conteiners. Em homenagem ao Docker, vamos fazer uma viagem ao passado e dar uma olhada nos principais marcos da vida útil dos conteiners virtualizados.
 
 **1979: Unix V7**
 

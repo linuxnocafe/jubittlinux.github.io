@@ -4,18 +4,20 @@ description: Renomeie e limpe seus logs periodicamente.
 header: Script para rotacionar logs
 ---
 
-Olá, galera! Vou mostrar um script que escrevi para rotacionar e apagar logs antigos. Esta é uma alternativa simples ao logrotate do Linux.
+Aqui vai um script que escrevi para rotacionar e apagar logs antigos. Esta é uma alternativa simples ao logrotate do Linux.
 Não esqueça de dar permissão de execução no arquivo do script.
 Como sugestão de automatização, a tarefa deve ser agendada no cron do sistema para execução periódica.
 
 Segue a dica:
 
-> \#!/bin/bash  
-for file in /path/to/\*.log  
-do  
-mv "${file}" "${file}.$(date +"%Y-%m-%d")"  
-done;  
-find /path/to/ -type f -not -name "*.swp" -mtime +5 -delete
+```console
+1. #!/bin/bash  
+2. for file in /path/to/\*.log  
+3. do  
+4. mv "${file}" "${file}.$(date +"%Y-%m-%d")"  
+5. done;  
+6. find /path/to/ -type f -not -name "*.swp" -mtime +5 -delete
+```
 
 **O que faz cada linha**
 

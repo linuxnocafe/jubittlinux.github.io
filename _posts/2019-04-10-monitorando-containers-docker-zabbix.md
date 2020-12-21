@@ -7,7 +7,7 @@ header: Monitorando containers Docker no Zabbix
 
 Dockbix é uma solução para ser implementada junto a ferramenta Zabbix de monitoramento. Dockbix permite monitorar containers em Docker e gerar gráficos e métricas a partir disso. Trata-se de um container que monitora outros containers.  
 
-![Containers monitorados pelo Dockbix container](https://raw.githubusercontent.com/linuxnocafe/linuxnocafe.github.io/master/img/dockbix.png)
+![Containers monitorados pelo Dockbix container](https://raw.githubusercontent.com/linuxnocafe/linuxnocafe.github.io/master/img/dockbix.png#responsive)
 
 Dockbix está presente no dockerhub em duas versões: a gratuita com algumas limitações e a paga, sendo esta última mais completa.
 

@@ -25,7 +25,7 @@ Primeiro temos que instalar os pacotes abaixo:
 
 O Debian deve estar apto a resolver o domínio Active Directory para que possa ingressar. Temos que verificar o servidor DNS em /etc/resolv.conf e confirmar se algum dos DNS’s é referente ao servidor que queremos ingressar.
 
-**Ingressando Debian ao domínio Windows**
+**Ingressando Debian no domínio**
 
 Para ingressar no domínio usaremos o comando “realm join”, como mostrado abaixo. É necessário especificar o nome do usuário do domínio que tem privilégios para ingressar a estação.
 

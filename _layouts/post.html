@@ -25,7 +25,10 @@ layout: default
       	})
     	</script>
     
-    
+    <!---Gallery------->
+	  {% include image-gallery.html folder="/img" %}
+    <!---Ends-Gallery----->
+	  
     <h1 itemprop="name headline">{{ page.title | escape }}</h1>
     <p class="text-secondary">
       {% if page.author %}

@@ -18,6 +18,10 @@ header_pages:
 - cronologia.md
 - perguntas.md
 
+images:
+  - image: /img/linus-torvalds-1.jpg
+  - image: /img/linus-torvalds-2.jpg
+
 footer_icons:
 - username: Terminal Root
   url: https://terminalroot.com.br/

@@ -10,13 +10,13 @@ Como sugestão de automatização, a tarefa deve ser agendada no cron do sistema
 
 Segue a dica:
 
-```console
-1. #!/bin/bash  
-2. for file in /path/to/\*.log  
-3. do  
-4. mv "${file}" "${file}.$(date +"%Y-%m-%d")"  
-5. done;  
-6. find /path/to/ -type f -not -name "*.swp" -mtime +5 -delete
+```{console, attr.source='.numberLines'}
+#!/bin/bash  
+for file in /path/to/\*.log  
+do  
+mv "${file}" "${file}.$(date +"%Y-%m-%d")"  
+done;  
+find /path/to/ -type f -not -name "*.swp" -mtime +5 -delete
 ```
 
 **O que faz cada linha**

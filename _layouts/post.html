@@ -46,12 +46,14 @@ layout: default
   </header>
 
   <div class="text-justify" itemprop="articleBody" id="content">
-    {{ content }}
+	  
+    {{ content }} 
+    <!-----Image-Gallery----->
+    {% include image-gallery.html folder="/uploads/album" %}
+    <!----------------------->
+	  
   </div>
-	
-  <!-----Image-Gallery----->
-  {% include image-gallery.html folder="/uploads/album" %}
-  <!----------------------->
+
 	
   {% if site.disqus.shortname %}
     {% include disqus_comments.html %}

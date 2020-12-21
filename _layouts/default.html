@@ -13,11 +13,7 @@ layout: compress
     <main aria-label="Content">
       <div id="content-container" class="container">
         {{ content }}              
-      </div>
-    </main>
-    
-    {% include footer.html %}
-    
+        
     <!-- Start-Lightbox -->
     {% for item in page.images %}
 <div class="lightbox" id="lightbox{{ forloop.index }}">
@@ -33,7 +29,12 @@ layout: compress
 </div>
     {% endfor %}
     <!-- End-Lightbox -->
+        
+      </div>
+    </main>
     
+    {% include footer.html %}
+       
     <!-- Lightbox -->
     <script type="text/javascript" src="/js/lightbox.js"></script>
     <link rel="stylesheet" href="/_sass/lightbox.css">

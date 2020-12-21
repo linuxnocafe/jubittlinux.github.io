@@ -15,6 +15,9 @@ Para tornar o Linux ainda mais popular, Torvalds utilizou a internet para pedir 
 
 Atualmente, o Linux alcançou uma extensão tão grande que as distribuições disponíveis constituem sistemas operacionais completos, modernos, confiáveis e, o mais importante, práticos.
 
+[Linus-Torvalds-1](https://raw.githubusercontent.com/JubittLinux/jubittlinux.github.io/master/img/linus-torvalds-1.jpg)
+[Linus-Torvalds-2](https://raw.githubusercontent.com/JubittLinux/jubittlinux.github.io/master/img/linus-torvalds-2.jpg)
+
 Para saber mais sobre o software livre, é possível encontrar grande quantidade de informações em:
 
 [https://www.gnu.org/philosophy/philosophy.pt-br.html](https://www.gnu.org/philosophy/philosophy.pt-br.html){:target="_blank"}

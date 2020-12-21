@@ -10,7 +10,7 @@ Como sugestão de automatização, a tarefa deve ser agendada no cron do sistema
 
 Segue a dica:
 
-```console
+```bash
 ### 1. Identifica o interpretador de comandos a ser usado.
     #!/bin/bash  
 
@@ -26,7 +26,8 @@ Segue a dica:
 ### 5. Encerra cada ação, passando para a próxima etapa quando todos os elementos forem lidos (renomeados).
     done;  
 
-### 6. Procura por arquivos cuja data da última modificação seja maior que cinco dias (exceto os arquivos com extensão .swp, por exemplo), 
+### 6. Procura por arquivos cuja data da última modificação seja maior que cinco dias 
+### (exceto os arquivos com extensão .swp, por exemplo), 
 ### deletando assim que achar a ocorrência.
     find /path/to/ -type f -not -name "*.swp" -mtime +5 -delete
 ```

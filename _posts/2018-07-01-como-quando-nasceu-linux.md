@@ -18,6 +18,10 @@ Atualmente, o Linux alcançou uma extensão tão grande que as distribuições d
 [Linus-Torvalds-1](https://raw.githubusercontent.com/JubittLinux/jubittlinux.github.io/master/img/linus-torvalds-1.jpg)
 [Linus-Torvalds-2](https://raw.githubusercontent.com/JubittLinux/jubittlinux.github.io/master/img/linus-torvalds-2.jpg)
 
+[![Linus-Torvads-1](https://raw.githubusercontent.com/JubittLinux/jubittlinux.github.io/master/img/linus-torvalds-1.jpg)](https://raw.githubusercontent.com/JubittLinux/jubittlinux.github.io/master/img/linus-torvalds-1.jpg)
+[![Linus-Torvalds-2](https://raw.githubusercontent.com/JubittLinux/jubittlinux.github.io/master/img/linus-torvalds-2.jpg)](https://raw.githubusercontent.com/JubittLinux/jubittlinux.github.io/master/img/linus-torvalds-2.jpg)
+
+
 Para saber mais sobre o software livre, é possível encontrar grande quantidade de informações em:
 
 [https://www.gnu.org/philosophy/philosophy.pt-br.html](https://www.gnu.org/philosophy/philosophy.pt-br.html){:target="_blank"}

@@ -7,7 +7,7 @@ header: lsof em 9 exemplos práticos
 lsof significa "LiSt Open Files" e é usado para descobrir qual arquivo está em uso por qual processo.
 A seguir vamos ver alguns exemplos para o comando lsof.
 
-1) Lista todos os arquivos abertos:
+*1. Lista todos os arquivos abertos:
 
 ```console
 # lsof
@@ -35,19 +35,19 @@ REG - Regular File
 CHR - Character Special File  
 FIFO - First In First Out  
 
-2) Listar arquivos abertos por determinado usuário:
+**2. Listar arquivos abertos por determinado usuário:
 
 ```console
 # lsof -u usuario
 ```
 
-3) Achar processos rodando em uma porta específica:
+**3. Achar processos rodando em uma porta específica:
 
 ```console
 # lsof -i TCP:53
 ```
 
-4) Listar somente arquivos abertos com protocolo IPv4 ou IPv6:
+**4. Listar somente arquivos abertos com protocolo IPv4 ou IPv6:
 
 ```console
 # lsof -i 4
@@ -57,31 +57,31 @@ FIFO - First In First Out
 # lsof -i 6
 ```
 
-5) Listar arquivos abertos no intervalo de portas TCP 1-1024:
+**5. Listar arquivos abertos no intervalo de portas TCP 1-1024:
 
 ```console
 # lsof -i TCP:1-1024
 ```
 
-6) Listar arquivos abertos por processos excluindo um determinado usuário:
+**6. Listar arquivos abertos por processos excluindo um determinado usuário:
 
 ```console
 # lsof -i -u^usuario
 ```
 
-7) Listar todas as conexões:
+**7. Listar todas as conexões:
 
 ```console
 # lsof -i
 ```
 
-8) Listar processos pelo PID. No exemplo a seguir listamos processos pelo PID 1:
+**8. Listar processos pelo PID. No exemplo a seguir listamos processos pelo PID 1:
 
 ```console
 # lsof -p 1
 ```
 
-9) Matar/encerrar toda atividade de um usuário específico:
+**9. Matar/encerrar toda atividade de um usuário específico:
 
 ```console
 # kill -9 `lsof -t -u usuario`

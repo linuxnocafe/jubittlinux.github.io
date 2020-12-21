@@ -12,7 +12,12 @@ layout: compress
 
     <main aria-label="Content">
       <div id="content-container" class="container">
-        {{ content }}              
+        {{ content }}      
+        
+    <!----Gallery---->
+	  {% include image-gallery.html folder="/img" %}
+	  <!--------------->
+        
       </div>
     </main>
     

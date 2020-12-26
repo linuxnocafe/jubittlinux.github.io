@@ -314,6 +314,6 @@ Com o "Pass" você também pode gerenciar credenciais por grupos. Isso é intere
 
 **Para saber mais:**
 
-[https://gnupg.org/](https://gnupg.org/)
-[https://www.passwordstore.org/](https://www.passwordstore.org/)
+[https://gnupg.org/](https://gnupg.org/)  
+[https://www.passwordstore.org/](https://www.passwordstore.org/)  
 [https://wiki.archlinux.org/index.php/Pass](https://wiki.archlinux.org/index.php/Pass)

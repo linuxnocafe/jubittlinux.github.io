@@ -44,6 +44,6 @@ permalink: /perguntas/
 
 #### 14. Como e quando nasceu o Linux?
 > A resposta para esta pergunta é mais longa. Temos um post sobre isso aqui no blog mesmo.  
-Leia mais no link: [Como e quando nasceu o Linux?] (https://linuxnocafe.github.io/2018/07/01/como-quando-nasceu-linux.html)
+Leia mais no link: [Como e quando nasceu o Linux?](https://linuxnocafe.github.io/2018/07/01/como-quando-nasceu-linux.html){:target="_blank"}
 
 ![Pinguim Tux com dúvidas](https://raw.githubusercontent.com/JubittLinux/jubittlinux.github.io/master/img/linux_question.jpg)

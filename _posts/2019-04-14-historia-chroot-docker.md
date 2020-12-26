@@ -1,10 +1,10 @@
 ---
-title: Introdução à história dos conteiners
+title: Introdução à história dos containers
 description: Do chroot ao Docker, uma breve história
-header: Introdução à história dos conteiners
+header: Introdução à história dos containers
 ---
 
-Ema março de 2018 o Docker completou cinco anos de existência. Mas essa não foi a primeira vez que ouvimos falar em conteiners. Em homenagem ao Docker, vamos fazer uma viagem ao passado e dar uma olhada nos principais marcos da vida útil dos conteiners virtualizados.
+Ema março de 2018 o Docker completou cinco anos de existência. Mas essa não foi a primeira vez que ouvimos falar em conteiners. Em homenagem ao Docker, vamos fazer uma viagem ao passado e dar uma olhada nos principais marcos da vida útil dos containers virtualizados.
 
 **1979: Unix V7**
 
@@ -36,11 +36,11 @@ Process Containers (lançado pelo Google em 2006) foi projetado para limitar, co
 
 **2008: LXC**
 
-O LXC (LinuX Containers) foi a primeira e mais completa implementação do gerenciador de conteiners do Linux. Foi implementado em 2008. Funciona em um único kernel Linux sem a necessidade de correções. 
+O LXC (LinuX Containers) foi a primeira e mais completa implementação do gerenciador de containers do Linux. Foi implementado em 2008. Funciona em um único kernel Linux sem a necessidade de correções. 
 
 **2011: Warden**
 
-A CloudFoundry iniciou o Warden em 2011, usando o LXC nos estágios iniciais e depois substituindo-o por sua própria implementação. Warden pode isolar ambientes em qualquer sistema operacional, sendo executado como um daemon e fornecendo uma API para gerenciamento de conteiners. Foi desenvolvido um modelo cliente-servidor para gerenciar uma coleção de conteiners em vários hosts, e Warden inclui um serviço para gerenciar cgroups, namespaces e o ciclo de vida do processo.
+A CloudFoundry iniciou o Warden em 2011, usando o LXC nos estágios iniciais e depois substituindo-o por sua própria implementação. Warden pode isolar ambientes em qualquer sistema operacional, sendo executado como um daemon e fornecendo uma API para gerenciamento de containers. Foi desenvolvido um modelo cliente-servidor para gerenciar uma coleção de containers em vários hosts, e Warden inclui um serviço para gerenciar cgroups, namespaces e o ciclo de vida do processo.
 
 **2013: LMCTFY**
 
@@ -48,14 +48,14 @@ Let Me Contain That For You (LMCTFY). As aplicações podem ser feitas com “co
 
 **2013: Docker**
 
-Quando o Docker surgiu em 2013, os conteiners explodiram em popularidade. Não é coincidência o crescimento do  Docker e o uso de conteiners andarem de mãos dadas. Assim como Warden fez, o Docker também usou o LXC em seus estágios iniciais e depois substituiu esse gerenciador de conteiner por sua própria biblioteca, o libcontainer. Mas não há dúvidas de que o Docker se separou do pacote oferecendo um ecossistema inteiro para o gerenciamento de conteiners.  
+Quando o Docker surgiu em 2013, os containers explodiram em popularidade. Não é coincidência o crescimento do  Docker e o uso de containers andarem de mãos dadas. Assim como Warden fez, o Docker também usou o LXC em seus estágios iniciais e depois substituiu esse gerenciador de container por sua própria biblioteca, o libcontainer. Mas não há dúvidas de que o Docker se separou do pacote oferecendo um ecossistema inteiro para o gerenciamento de containers.  
 
-**2017: as ferramentas de conteiner se tornam maduras**
+**2017: as ferramentas de container se tornam maduras**
 
-Centenas de ferramentas foram desenvolvidas para facilitar o gerenciamento de conteiners. Embora esses tipos de ferramentas existam há anos, 2017 é o ano em que muitas delas conquistaram suas chances. Basta olhar para o Kubernetes; desde sua adoção na Cloud Computing Foundation (CNCF) em 2016, a VMWare , Azure , AWS e até Docker anunciaram suporte a sua infraestrutura.  
+Centenas de ferramentas foram desenvolvidas para facilitar o gerenciamento de containers. Embora esses tipos de ferramentas existam há anos, 2017 é o ano em que muitas delas conquistaram suas chances. Basta olhar para o Kubernetes; desde sua adoção na Cloud Computing Foundation (CNCF) em 2016, a VMWare , Azure , AWS e até Docker anunciaram suporte a sua infraestrutura.  
 
 **Kubernetes cresce**
 
-Em 2017, o projeto de código aberto demonstrou grandes avanços no sentido de se tornar uma tecnologia mais madura. O Kubernetes suporta classes de aplicativos cada vez mais complexas - permitindo a transição corporativa para a nuvem híbrida e para os microsserviços. Na DockerCon em Copenhague, a Docker anunciou que oferecerá suporte ao orquestrador de conteiners Kubernetes, e o Azure e a AWS entraram em acordo. O Kubernetes parece ter um futuro brilhante à frente como a plataforma de orquestração de fato.  
+Em 2017, o projeto de código aberto demonstrou grandes avanços no sentido de se tornar uma tecnologia mais madura. O Kubernetes suporta classes de aplicativos cada vez mais complexas, permitindo, assim, a transição corporativa para a nuvem híbrida e para os microsserviços. Na DockerCon em Copenhague, a Docker anunciou que oferecerá suporte ao orquestrador de containers Kubernetes, e o Azure e a AWS entraram em acordo. O Kubernetes parece ter um futuro brilhante à frente como a plataforma de orquestração de fato.  
 
 ![História dos conteiners](https://raw.githubusercontent.com/linuxnocafe/linuxnocafe.github.io/master/img/container-history.jpg#responsive)

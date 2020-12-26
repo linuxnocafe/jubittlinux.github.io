@@ -19,7 +19,7 @@ foo
 
 Primeiro temos que instalar os pacotes abaixo:
 
-```bash
+```console
 # sudo apt install sssd realmd -y
 ```
 
@@ -29,7 +29,7 @@ O Debian deve estar apto a resolver o domínio Active Directory para que possa i
 
 Para ingressar no domínio usaremos o comando “realm join”, como mostrado abaixo. É necessário especificar o nome do usuário do domínio que tem privilégios para ingressar a estação.
 
-```bash
+```console
 # realm join --user=administrator example.com  
 Password for administrator:
 ```
@@ -38,7 +38,7 @@ Uma vez digitada a senha da conta solicitada, os arquivos /etc/sssd/sssd.conf e 
 
 Podemos confirmar que ingressamos no domínio executando o comando “realm list”, como mostrado abaixo:
 
-```bash
+```console
 # realm list  
 example.com  
 type: kerberos  
@@ -59,11 +59,11 @@ login-policy: allow-realm-logins
 Uma vez concluído com sucesso, um objeto referente a estação será criado no Active Directory no container referente a “computers”.  
 Agora que ingressamos no domínio podemos fazer alguns testes. Por padrão, se queremos especificar algum usuário temos que especificar também o nome do domínio. Por exemplo, com o comando “id” abaixo não obtemos nada para “administrator”, porém “administrator@example.com” mostra a UID da conta, bem como os grupos a que esta conta pertence no domínio Active Directory.  
 
-```bash
+```console
 # id administrator  
 id: administrator: no such user
 ```
-```bash
+```console
 # id administrator@example.com  
 uid=1829600500(administrator@example.com) 
 gid=1829600513(domain users@example.com) 
@@ -91,7 +91,7 @@ fallback_homedir = /home/%u
 
 Para aplicar as mudanças reinicie o sssd:  
 
-```bash
+```console
 # systemctl restart sssd  
 ```
 
@@ -122,7 +122,7 @@ $ echo "session required pam_mkhomedir.so skel=/etc/skel/ umask=0022" | sudo tee
 **Configurando SSH e acesso sudo**
 
 Agora que ingressamos o Debian com sucesso no domínio, nós podemos conectar via SSH com qualquer usuário do domínio Active Directory com as configurações padrão:  
-```bash
+```console
 # ssh user1@localhost  
 user1@localhost’s password:  
 Creating home directory for user1. 
@@ -132,7 +132,7 @@ Podemos também restringir acesso SSH modificando o arquivo /etc/ssh/sshd_config
 
 Podemos também modificar as configurações de sudo para permitir que nossa conta do domínio tenha o desejado nível de acesso. Podemos criar um grupo no Active Directory chamado “sudoers”, colocar o usuário nele, e então permitir que esse grupo tenha acesso sudo criando o arquivo /etc/sudoers.d/ que permitirá o acesso root ser controlado pelo AD. Abaixo um exemplo, o grupo “sudoers” terá acesso root pleno.  
 
-```bash
+```console
 # cat /etc/sudoers.d/sudoers  
 %sudoers ALL=(ALL) ALL 
 ```
@@ -141,7 +141,7 @@ Este grupo existe apenas no Active Directory. Nosso Linux pode ver que user1 é 
 
 Com isso, nosso user1 estará apto a usar o comando sudo para executar comando com privilégios root.  
 
-```bash
+```console
 [user1@debian ~]$ sudo su  
 [sudo] password for user1:  
 [root@debian user1]#  
@@ -153,7 +153,7 @@ root
 
 Podemos fazer o processo inverso e remover a estação do domínio, simplesmente executando “realm leave” seguido do domínio, como mostrado abaixo:  
 
-```bash
+```console
 # realm leave example.com 
 ```
 

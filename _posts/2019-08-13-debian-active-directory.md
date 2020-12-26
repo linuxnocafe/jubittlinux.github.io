@@ -10,7 +10,7 @@ Há inúmeros meios de se fazer isso, porém o jeito mais fácil que encontrei f
 
 Neste exemplo estou usando Debian 9 e Windows Server 2012 R2, contudo a versão de Windows não importa. Estamos assumindo que o nosso domínio já está preparado e configurado. Nós estamos simplesmente ingressando o Debian no domínio existente.
 
-```console
+```bash
 foo@bar:~$ whoami
 foo
 ```
@@ -19,7 +19,7 @@ foo
 
 Primeiro temos que instalar os pacotes abaixo:
 
-```console
+```bash
 # sudo apt install sssd realmd -y
 ```
 
@@ -29,7 +29,7 @@ O Debian deve estar apto a resolver o domínio Active Directory para que possa i
 
 Para ingressar no domínio usaremos o comando “realm join”, como mostrado abaixo. É necessário especificar o nome do usuário do domínio que tem privilégios para ingressar a estação.
 
-```console
+```bash
 # realm join --user=administrator example.com  
 Password for administrator:
 ```
@@ -38,7 +38,7 @@ Uma vez digitada a senha da conta solicitada, os arquivos /etc/sssd/sssd.conf e 
 
 Podemos confirmar que ingressamos no domínio executando o comando “realm list”, como mostrado abaixo:
 
-```console
+```bash
 # realm list  
 example.com  
 type: kerberos  
@@ -59,11 +59,11 @@ login-policy: allow-realm-logins
 Uma vez concluído com sucesso, um objeto referente a estação será criado no Active Directory no container referente a “computers”.  
 Agora que ingressamos no domínio podemos fazer alguns testes. Por padrão, se queremos especificar algum usuário temos que especificar também o nome do domínio. Por exemplo, com o comando “id” abaixo não obtemos nada para “administrator”, porém “administrator@example.com” mostra a UID da conta, bem como os grupos a que esta conta pertence no domínio Active Directory.  
 
-```console
+```bash
 # id administrator  
 id: administrator: no such user
 ```
-```console
+```bash
 # id administrator@example.com  
 uid=1829600500(administrator@example.com) 
 gid=1829600513(domain users@example.com) 
@@ -77,27 +77,27 @@ groups=1829600513(domain users@example.com),
 
 Nós podemos modificar este comportamente modificando o arquivo /etc/sssd/sssd.conf, nas seguintes linhas:  
 
-```console
+```bash
 use_fully_qualified_names = True  
 fallback_homedir = /home/%u@%d  
 ```
 
 Modifique de acordo com as linhas abaixo, que não requerem um FQDN (fully qualified domain name) a ser especificado. Isso também modifica o comportamente do diretório /home evitando que tenha um FQDN especificado depois do nome do usuário.  
 
-```console
+```bash
 use_fully_qualified_names = False  
 fallback_homedir = /home/%u 
 ```
 
 Para aplicar as mudanças reinicie o sssd:  
 
-```console
+```bash
 # systemctl restart sssd  
 ```
 
 Agora estaremos aptos a encontrar contas de usuários sem especificar o domínio. Ver exemplo abaixo:  
 
-```console
+```bash
 # id administrator  
 uid=1829600500(administrator) 
 gid=1829600513(domain users) 
@@ -115,14 +115,14 @@ Se ainda assim não funcionar você deve tentar limpar o cache do sssd.
 
 Em Debian e derivados a criação do diretório home do usuário não ocorre de forma automática após o primeiro login. Por isso devemos adicionar uma informação ao /etc/pam.d/common-session  
 
-```console
+```bash
 $ echo "session required pam_mkhomedir.so skel=/etc/skel/ umask=0022" | sudo tee -a /etc/pam.d/common-session 
 ```
 
 **Configurando SSH e acesso sudo**
 
 Agora que ingressamos o Debian com sucesso no domínio, nós podemos conectar via SSH com qualquer usuário do domínio Active Directory com as configurações padrão:  
-```console
+```bash
 # ssh user1@localhost  
 user1@localhost’s password:  
 Creating home directory for user1. 
@@ -132,7 +132,7 @@ Podemos também restringir acesso SSH modificando o arquivo /etc/ssh/sshd_config
 
 Podemos também modificar as configurações de sudo para permitir que nossa conta do domínio tenha o desejado nível de acesso. Podemos criar um grupo no Active Directory chamado “sudoers”, colocar o usuário nele, e então permitir que esse grupo tenha acesso sudo criando o arquivo /etc/sudoers.d/ que permitirá o acesso root ser controlado pelo AD. Abaixo um exemplo, o grupo “sudoers” terá acesso root pleno.  
 
-```console
+```bash
 # cat /etc/sudoers.d/sudoers  
 %sudoers ALL=(ALL) ALL 
 ```
@@ -141,7 +141,7 @@ Este grupo existe apenas no Active Directory. Nosso Linux pode ver que user1 é 
 
 Com isso, nosso user1 estará apto a usar o comando sudo para executar comando com privilégios root.  
 
-```console
+```bash
 [user1@debian ~]$ sudo su  
 [sudo] password for user1:  
 [root@debian user1]#  
@@ -153,7 +153,7 @@ root
 
 Podemos fazer o processo inverso e remover a estação do domínio, simplesmente executando “realm leave” seguido do domínio, como mostrado abaixo:  
 
-```console
+```bash
 # realm leave example.com 
 ```
 

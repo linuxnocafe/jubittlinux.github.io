@@ -44,7 +44,7 @@ Não armazene esta chave em meios digitais. Tente decorar. E tome cuidado porque
 Com GPG também é possível escolher o tipo de criptografia que quer utilizar. Por padrão, o algoritmo atualmente usado é AES-256.
 A versão 2.2.4 do GnuPG suporta os seguintes algoritmos de criptografia:
 
-> **Criptografia**: IDEA, 3DES, CAST5, BLOWFISH, AES, AES192, AES256, TWOFISH, CAMELLIA128, CAMELLIA192, CAMELLIA256
+> **Criptografia**: IDEA, 3DES, CAST5, BLOWFISH, AES, AES192, AES256, TWOFISH, CAMELLIA128, CAMELLIA192, CAMELLIA256  
 **Hash**: SHA1, RIPEMD160, SHA256, SHA384, SHA512, SHA224
 
 Para mais informações digite no terminal:

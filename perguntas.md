@@ -42,7 +42,8 @@ permalink: /perguntas/
 #### 13. Se Linux é tão bom por que Windows está presente na grande maioria dos computadores vendidos?
 > Windows domina o mercado porque a Microsoft desde o início do surgimento dos PCs (personal computer) estabeleceu um pacto comercial com a IBM. A IBM foi a primeira empresa a desenvolver os computadores pessoais, isto é, computadores domésticos. Eram chamados de IBM-PC. Na época a IBM dispunha do hardware mas não do software (sistema operacional). E a Microsoft dispunha do software mas não do hardware. A única maneira de tornar um computador utilizável a nível doméstico era comercializando os dois recursos juntos. Por isso os computadores pessoais passaram a ser vendidos com o sistema da Microsoft; os antigos MS-DOS (Microsoft - Disk Operating System).
 
-#### 14. Várias pessoas distribuem cópias de Windows ou a instalam livremente.
-> Isso é pirataria. Para usar Windows o usuário deve pagar uma licença. Windows é um software proprietário com direitos pertencentes à Microsoft. Por isso paga-se uma licença.
+#### 14. Como nasceu e quando nasceu o Linux?
+> A resposta para esta pergunta é mais longa. Temos um post sobre isso aqui no blog mesmo. 
+Leia mais no link: [Como e quando nasceu o Linux?] (https://linuxnocafe.github.io/2018/07/01/como-quando-nasceu-linux.html)
 
 ![Pinguim Tux com dúvidas](https://raw.githubusercontent.com/JubittLinux/jubittlinux.github.io/master/img/linux_question.jpg)

@@ -12,32 +12,42 @@ Nux Dextop é um repositório RPM de terceiros que contém pacotes multimídia e
 
 Neste post, mostraremos como habilitar o repositório Nux Dextop no CentOS 7 . Note que o repositório Nux Dextop deve coexistir com o repositório EPEL.
 
-NOTA: Como claramente declarado pelo mantenedor do repositório, este repositório pode entrar em conflito com outros repositórios RPM de terceiros, como Repoforge / RPMforge e ATrpms. Alguns dos pacotes podem ou não estar atualizados, portanto, instale-os por sua conta e risco.
+> NOTA: Como claramente declarado pelo mantenedor do repositório, este repositório pode entrar em conflito com outros repositórios RPM de terceiros, como Repoforge / RPMforge e ATrpms. Alguns dos pacotes podem ou não estar atualizados, portanto, instale-os por sua conta e risco.
 
 Primeiro inicie importando a chave GPG do Nux Dextop para o seu sistema CentOS usando o seguinte comando:
 
-> $ sudo rpm --import http://li.nux.ro/download/nux/RPM-GPG-KEY-nux.ro
+```console
+$ sudo rpm --import http://li.nux.ro/download/nux/RPM-GPG-KEY-nux.ro
+```
 
 Em seguida instalamos o repositório Nux Dextop:
 
-> $ sudo yum -y install epel-release   
-$ sudo rpm -Uvh http://li.nux.ro/download/nux/dextop/el7/x86_64/nux-dextop-release-0-5.el7.nux.noarch.rpm  
+```console
+$ sudo yum -y install epel-release   
+$ sudo rpm -Uvh http://li.nux.ro/download/nux/dextop/el7/x86_64/nux-dextop-release-0-5.el7.nux.noarch.rpm
+```
 
 Em seguida verifique se o repositório foi instalado com sucesso:
 
-> $ yum repolist \| grep nux-dextop
+```console
+$ yum repolist | grep nux-dextop
+```
 
 Tendo o repositório sido instalado com sucesso a próxima etapa será instalar alguns pacotes necessários para rodar o Mupen64plus.
 
-> $ sudo yum install libodb-boost-devel.x86_64 boost-devel.x86_64 minizip.x86_64 mupen64plus.x86_64
+```console
+$ sudo yum install libodb-boost-devel.x86_64 boost-devel.x86_64 minizip.x86_64 mupen64plus.x86_64
+```
 
 NOTA: O emulador Mupen64plus executa por linha de comando. Sendo assim abra-o pelo terminal da seguinte forma:
 
-> $ mupen64plus /path/to/rom
+```console
+$ mupen64plus /path/to/rom
+```
 
-Para fullscreen aperte [Alt] + [Enter]. 
+Para fullscreen aperte [Alt] + [Enter] no teclado.
 Caso tenha um joystick este será reconhecido de forma nativa.
 
-Para mais informações: [https://mupen64plus.org/](https://mupen64plus.org/)
+Para mais informações: [https://mupen64plus.org/](https://mupen64plus.org/){:target="_blank"}
 
 Boa diversão! E até a próxima!

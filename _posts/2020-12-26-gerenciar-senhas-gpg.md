@@ -256,9 +256,9 @@ $ mv backup-password/ .password-store/
 **Backup das assinaturas:**
 
 ```console
-$ cp -R .gnupg/ backup-gnupg/
+$ cd ~/
 
-$ tar -zcvf backup-gnupg.tar.gz /home/$USER/backup-gnupg
+$ cp -R .gnupg/ backup-gnupg/
 
 $ tar -zxvf backup-gnupg.tar.gz -C ~/.gnupg
 ```

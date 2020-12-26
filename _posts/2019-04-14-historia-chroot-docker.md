@@ -58,4 +58,4 @@ Centenas de ferramentas foram desenvolvidas para facilitar o gerenciamento de co
 
 Em 2017, o projeto de código aberto demonstrou grandes avanços no sentido de se tornar uma tecnologia mais madura. O Kubernetes suporta classes de aplicativos cada vez mais complexas, permitindo, assim, a transição corporativa para a nuvem híbrida e para os microsserviços. Na DockerCon em Copenhague, a Docker anunciou que oferecerá suporte ao orquestrador de containers Kubernetes, e o Azure e a AWS entraram em acordo. O Kubernetes parece ter um futuro brilhante à frente como a plataforma de orquestração de fato.  
 
-![História dos conteiners](https://raw.githubusercontent.com/linuxnocafe/linuxnocafe.github.io/master/img/container-history.jpg#responsive)
+![História dos containers](https://raw.githubusercontent.com/linuxnocafe/linuxnocafe.github.io/master/img/container-history.jpg#responsive)

@@ -43,7 +43,7 @@ Execute ->  ./%e
 
 Deve ficar como a seguir:
 
-![Comandos independentes](https://raw.githubusercontent.com/JubittLinux/jubittlinux.github.io/master/img/geany-gcc-1.png#responsive)
+![Geany-Definir Comandos de Construir](https://raw.githubusercontent.com/linuxnocafe/linuxnocafe.github.io/master/img/geany-gcc-1.png#responsive)
  
 Clique em [ OK ]. Escreva um programa em C e salve com a extensão .c. Por exemplo, "meu-programa.c". Aperte [ F9 ] para construir e [ F5 ] para executar.
 

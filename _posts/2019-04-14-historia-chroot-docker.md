@@ -10,7 +10,7 @@ Ema março de 2018 o Docker completou cinco anos de existência. Mas essa não f
 
 O primeiro registro de conteiners refere-se ao chroot. Este foi implementado durante o desenvolvimento do Unix V7, em 1979. O chroot foi introduzido, mudando o diretório raiz de um processo e seus filhos para um novo local no sistema de arquivos. Esse avanço foi o início do isolamento do processo: a segregação do acesso a arquivos para cada processo. Chroot foi adicionado ao BSD em 1982. 
 
-![Chroot como sistema de isolamento](https://raw.githubusercontent.com/JubittLinux/jubittlinux.github.io/master/img/chroot-sample.png#responsive)
+![Chroot como sistema de isolamento](https://raw.githubusercontent.com/linuxnocafe/linuxnocafe.github.io/master/img/chroot-sample.png#responsive)
 
 
 **2000: Jails - FreeBSD**

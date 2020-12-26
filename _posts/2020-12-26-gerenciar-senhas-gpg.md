@@ -86,7 +86,7 @@ Após isso sua senha será solicitada novamente caso queira consultar o arquivo 
 O utilitário "Pass" fornece dois fatores de proteção. O primeiro fator é que ele obrigada o usuário a criar sua assinatura digital antes de começar a guardar as credencias. O segundo fator de proteção é que você fica impedido de acessar seu arquivo criptografado se não tiver a assinatura digital. Mesmo que você saiba a senha, sem a presença da assinatura digital o "Pass" não funcionará. Então, é um trabalho que só funciona quando os dois fatores trabalham em conjunto: a assinatura digital e a senha correta. A assinatura digital é única e nunca se repete.
 Se decidir usar o utilitário "Pass" você terá que fazer o backup dos arquivos das credenciais criptografadas e também da sua assinatura digital. Se perder a assinatura digital com a qual criptografou as credenciais é tchau e benção! Nunca mais vai conseguir acessar as credenciais que criptografou. 
 
-> Memorize isso: a assinatura digital é única e não se repete. Você não vai conseguir criar outra assinatura digital igual a que foi comprometida ou perdida, mesmo informando as mesmas características no processo de criação.
+> Importante: a assinatura digital é única e não se repete. Você não vai conseguir criar outra assinatura digital igual a que foi comprometida ou perdida, mesmo informando as mesmas características no processo de criação.
 
 Instale o "Pass" a partir do seu repositório:
 

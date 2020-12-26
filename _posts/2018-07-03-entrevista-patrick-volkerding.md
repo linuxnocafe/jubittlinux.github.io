@@ -94,6 +94,6 @@ Neste ponto, eu tenho alguns scripts agradáveis que criam pacotes, incluindo os
 
 **Pat:** Claro! 
 
-Fonte: [http://www.linuxjournal.com/article/2750/](http://www.linuxjournal.com/article/2750/){target="_blank"}
+Fonte: [http://www.linuxjournal.com/article/2750/](http://www.linuxjournal.com/article/2750/){:target="_blank"}
 
 ![Patrick Volkerding](https://raw.githubusercontent.com/linuxnocafe/linuxnocafe.github.io/master/img/patrick-volkerding.jpg#responsive)

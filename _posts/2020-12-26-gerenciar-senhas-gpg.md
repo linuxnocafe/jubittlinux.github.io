@@ -20,7 +20,7 @@ Veja a seguir como usar o GPG para proteger suas informações.
 Criamos um arquivo chamado "cryptography" na /home do usuário. Este arquivo a príncipio é do tipo texto e pode ser aberto sem impedimento para exibição do conteúdo.
 Para verificar o tipo de arquivo use o comando "file".
 
-```console
+```bash
 $ cd ~/
 
 $ echo "Olá! Este arquivo foi encriptado." > cryptography
@@ -63,7 +63,7 @@ E agora vamos acessar o arquivo encriptado. Existe a possibilidade de desencript
 
 Consultando o arquivo encriptado e expurgando o conteúdo na sua tela no terminal: 
 
-```console
+```bash
 $ gpg -d cryptography.gpg
 gpg: dados criptografados com BLOWFISH
 gpg: criptografado com 1 frase secreta
@@ -97,7 +97,7 @@ $ sudo apt install pass
 "Pass" armazena os dados na /home do usuário num diretório de nome ".password-store".
 Para visualizar:
 
-```console
+```bash
 $ cd ~/
 
 $ ls -la | grep .password-store
@@ -166,7 +166,7 @@ No fim do procedimento acima será aberta uma janela para inserir a senha que se
 
 O próximo passo é iniciar o "Pass" pela primeira vez. Vai precisar do ID da chave que criou no procedimento acima. Caso esteja em dúvida e queira consultar quais os IDs disponíveis pode usar o comando abaixo:
 
-```console
+```bash
 $ gpg --list-keys
 gpg: checando o trustdb
 gpg: marginals needed: 3  completes needed: 1  trust model: pgp
@@ -181,7 +181,7 @@ sub   rsa2048 2020-12-20 [E]
 
 Iniciando o "Pass" pela primeira vez:
 
-```console
+```bash
 $ pass init 209320EE191F65C169EA6E734D48944FA82B0348
 Password store initialized for 209320EE191F65C169EA6E734D48944FA82B0348
 ```
@@ -189,7 +189,7 @@ Password store initialized for 209320EE191F65C169EA6E734D48944FA82B0348
 Agora está pronto para usar. E você pode inserir credenciais. 
 Inserindo as credenciais:
 
-```console
+```bash
 $ pass insert Negocios/my-user@email.com
 mkdir: foi criado o diretório '/home/user/.password-store/Negocios'
 Enter password for Negocios/my-user@email.com: 
@@ -203,7 +203,7 @@ Retype password for Compras/my-user@email.com:
 
 Para entender como isso é armazenado use o comando "pass". Você vai ver que as informações são armazenadas na forma de árvore. E o que fizemos acima foi armazenar uma credencial em cada categoria. 
 
-```console
+```bash
 $ pass
 Password Store
 ├── Compras
@@ -214,7 +214,7 @@ Password Store
 
 Agora vamos usar uma credencial. Após digitar o comando abaixo uma janela será aberta solictando a senha que você usou para criar sua assinatura digital. 
 
-```console
+```bash
 $ pass -c Compras/my-user@email.com
 Copied Compras/my-user@email.com to clipboard. Will clear in 45 seconds.
 ```
@@ -223,7 +223,7 @@ A senha da crencial armazenada foi transferida para a memória ram e estará dis
 
 Removendo credencial:
 
-```console
+```bash
 $ pass rm Compras/my-user@email.com
 Are you sure you would like to delete Compras/my-user@email.com? [y/N] y
 removido '/home/user/.password-store/Compras/my-user@email.com.gpg'
@@ -278,7 +278,7 @@ $ mv backup-gnupg/ .gnupg/
 O que fizemos na última etapa acima foi exportar o diretório com todos os arquivos que estruturam as chaves criadas pelo usuário.
 É possível também exportar e importar somente uma única chave GPG:
 
-```console
+```bash
 $ cd ~/
 
 $ gpg --list-secret-keys

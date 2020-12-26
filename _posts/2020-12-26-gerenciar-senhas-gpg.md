@@ -106,7 +106,7 @@ drwx------  3 user	user	4096 dez 20 17:05 .password-store
 
 Gerando a chave GPG (assinatura digital):
 
-```console
+```bash
 $ gpg --full-generate-key
 gpg (GnuPG) 2.2.4; Copyright (C) 2017 Free Software Foundation, Inc.
 This is free software: you are free to change and redistribute it.

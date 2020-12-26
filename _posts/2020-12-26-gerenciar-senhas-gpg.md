@@ -260,7 +260,7 @@ $ cd ~/
 
 $ cp -R .gnupg/ backup-gnupg/
 
-$ tar -zxvf backup-gnupg.tar.gz -C ~/.gnupg
+$ tar -zcvf backup-gnupg.tar.gz backup-gnupg
 ```
 
 **Restaurar assinaturas**

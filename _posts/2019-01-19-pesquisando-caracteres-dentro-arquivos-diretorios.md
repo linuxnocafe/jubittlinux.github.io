@@ -4,42 +4,54 @@ description: Use o comando grep para fazer pesquisas dentro de arquivos e diret�
 header: Pesquisando caracteres dentro de arquivos e diretórios
 ---
 
-Este post irá orientá-lo sobre como achar cadeias de caracteres específicas dentro de arquivos ou diretórios.
-Uma maneira simples de resolver isso é usando a ferramenta de busca de padrões grep, que é um utilitário de linha de comando. O grep é poderoso, eficiente e confiável. É o mais popular para encontrar padrões e palavras dentro de arquivos ou diretórios em sistemas Unix-like.
+Este post irá orientá-lo sobre como achar cadeias de caracteres específicas dentro de arquivos ou diretórios. Uma maneira simples de resolver isso é usando a ferramenta de busca de padrões "grep", que é um utilitário de linha de comando. O "grep" é poderoso, eficiente e confiável. É o mais popular para encontrar padrões e palavras dentro de arquivos ou diretórios em sistemas Unix-like.
 
-O comando abaixo listará todos os arquivos contendo uma linha com o texto “banana”, procurando de forma recursiva no diretório /bin dentro da home do usuário (~).
+Dentro da /home do usuário vamos criar um diretório chamado "frutas" e em seguida vamos inserir uma sequência de nome de frutas em um arquivo .txt chamado "minhas_frutas.txt". Os nomes serão inseridos usando o comando "echo" de forma que cada item fique sozinho em cada linha (haverá quebra de linha).
 
-> $ grep -Rw ~/bin -e 'banana'  
-/home/juliana/bin/minhas_frutas.txt:banana
+```console
+$ cd ~/
+$ mkdir frutas
+$ echo -en 'banana \nabacaxi \nmaçã \nuva \nlaranja n\' > ~/frutas/minhas_frutas.txt
+```
 
-Onde a opção -R diz ao grep para ler todos os arquivos em cada diretório, recursivamente. A opção -w instrui o grep a selecionar apenas as linhas contendo correspondências que formam palavras inteiras. A opção -e é usado para especificar a string (padrão) a ser pesquisada.
+O comando abaixo listará todos os arquivos contendo uma linha com o texto “banana”, procurando de forma recursiva no diretório "frutas" dentro da /home do usuário (~). Criamos o diretório de nome "frutas" mas você pode criar um diretório de nome qualquer dentro da sua /home para pode praticar.
 
-Você deve usar o comando sudo ao pesquisar determinados diretórios ou arquivos que requerem permissões de root, a não ser que você esteja gerenciando seu sistema com a conta root.
+```console
+jubitt@supertux:~$ grep -Rw ~/frutas -e 'banana' 
+/home/user/frutas/minhas_frutas.txt:banana 
+```
+
+Onde a opção -R diz ao "grep" para ler todos os arquivos em cada diretório, recursivamente. A opção -w instrui o "grep" a selecionar apenas as linhas contendo correspondências que formam palavras inteiras. A opção -e é usado para especificar a string (padrão) a ser pesquisada.
 
 Para ignorar caixa alta use a opção -i:
 
-> $ grep -Riw ~/bin -e 'MELANCIA'  
-/home/juliana/bin/minhas_frutas.txt:melancia
+```console
+$ grep -Riw ~/frutas -e 'LARANJA' 
+/home/user/frutas/minhas_frutas.txt:laranja 
+```
 
 Para saber a linha exata em que aparece a string procurada use a opção -n:
 
-> $ grep -Rinw ~/bin -e 'MELANCIA'  
-/home/juliana/bin/minhas_frutas.txt:4:melancia
+```console
+$ grep -Rinw ~/frutas -e 'LARANJA' 
+/home/user/frutas/minhas_frutas.txt:5:laranja 
+```
 
-Supondo que existem vários tipos de arquivos em um diretório que você deseja pesquisar, você também pode especificar o tipo de arquivo a ser pesquisado usando a opção --include:
+Você também pode especificar o tipo de arquivo a ser pesquisado usando a opção "--include". No exemplo a seguir temos um arquivo em bash ".sh" que contém a mensagem "Hello! Prefiro abacaxi.". No caso abaixo estamos procurando pela palavra "Hello" em arquivos ".sh".
 
-> $ grep -Rnw --include=\\*.sh ~/bin -e 'melancia'  
-/home/juliana/bin/minhas_frutas.sh:4:melancia  
-/home/juliana/bin/minhas_frutas.sh:9:melancia  
+```console
+$ grep -Rnw ~/frutas --include=\*.sh -e 'Hello'
+/home/user/frutas/frutas.sh:4:echo "Hello! Prefiro abacaxi."
+```
 
 Além disso, é possível procurar por mais de um padrão, usando a opção -e duas vezes, como a seguir:
 
-> $ grep -Rinw ~/bin -e 'abacate' -e 'banana'  
-/home/juliana/bin/minhas_frutas.txt:1:banana  
-/home/juliana/bin/minhas_frutas.txt:3:abacate  
-/home/juliana/bin/minhas_frutas.sh:1:banana  
-/home/juliana/bin/minhas_frutas.sh:3:abacate  
-
+```console
+$ grep -Rinw ~/frutas -e 'laranja' -e 'abacaxi'
+/home/jubitt/frutas/frutas.sh:4:echo "Hello! Prefiro abacaxi."
+/home/jubitt/frutas/minhas_frutas.txt:2:abacaxi 
+/home/jubitt/frutas/minhas_frutas.txt:5:laranja 
+```
 
 Até o próximo tutorial!
 

@@ -17,6 +17,7 @@ minima_reboot:
 header_pages:
 - cronologia.md
 - perguntas.md
+- contato.md
 
 footer_icons:
 - username: Terminal Root

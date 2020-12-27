@@ -17,7 +17,7 @@ $ echo -en 'banana \nabacaxi \nmaçã \nuva \nlaranja n\' > ~/frutas/minhas_frut
 O comando abaixo listará todos os arquivos contendo uma linha com o texto “banana”, procurando de forma recursiva no diretório "frutas" dentro da /home do usuário (~). Criamos o diretório de nome "frutas" mas você pode criar um diretório de nome qualquer dentro da sua /home para pode praticar.
 
 ```console
-jubitt@supertux:~$ grep -Rw ~/frutas -e 'banana' 
+$ grep -Rw ~/frutas -e 'banana' 
 /home/user/frutas/minhas_frutas.txt:banana 
 ```
 
@@ -48,9 +48,9 @@ Além disso, é possível procurar por mais de um padrão, usando a opção -e d
 
 ```console
 $ grep -Rinw ~/frutas -e 'laranja' -e 'abacaxi'
-/home/jubitt/frutas/frutas.sh:4:echo "Hello! Prefiro abacaxi."
-/home/jubitt/frutas/minhas_frutas.txt:2:abacaxi 
-/home/jubitt/frutas/minhas_frutas.txt:5:laranja 
+/home/user/frutas/frutas.sh:4:echo "Hello! Prefiro abacaxi."
+/home/user/frutas/minhas_frutas.txt:2:abacaxi 
+/home/user/frutas/minhas_frutas.txt:5:laranja 
 ```
 
 Até o próximo tutorial!

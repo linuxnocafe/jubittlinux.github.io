@@ -18,6 +18,6 @@ Informações extras:
 Julio Cezar Neves é engenheiro e analista de sistemas. É autor dos livros "Programação Shell Linux" e "Bombando o Shell".
 Em 2006 ele foi entrevistado pelo Jô Soares para falar sobre software livre. A entrevista pode ser achada no Youtube.
 
-[Acesse aqui o papo de botequim](https://1drv.ms/f/s!AkSYEMI3hdChgUSV3WkiMMAiZiU-)
+[Acesse aqui o papo de botequim](https://1drv.ms/f/s!AkSYEMI3hdChgUSV3WkiMMAiZiU-){:target="_blank"}
 
 

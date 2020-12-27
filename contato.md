@@ -4,6 +4,6 @@ title: Contato
 permalink: /contato/
 ---
 
-Sugestões de assuntos para publicação:
+Quer sugerir um assunto para publicação? 
 
-contato[arroba-aqui]linuxnocafe.info
+Encaminhe um email para: contato[arroba-aqui]linuxnocafe.info

@@ -73,7 +73,7 @@ Canal: [https://www.youtube.com/EuroBSDcon/](https://www.youtube.com/EuroBSDcon/
 Site: [https://www.freebsd.org/](https://www.freebsd.org/)  
 Canal: [https://www.youtube.com/FreeBSDProject/](https://www.youtube.com/FreeBSDProject/)  
 
-- RoboNuggie  
+- RoboNuggie - Covering Everything FreeBSD  
 Site: [https://robonuggie.com/](https://robonuggie.com/)  
 Canal: [https://www.youtube.com/RoboNuggie/](https://www.youtube.com/RoboNuggie/)  
 

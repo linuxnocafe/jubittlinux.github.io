@@ -24,9 +24,9 @@ Canal: [https://www.youtube.com/PapoBinario/](https://www.youtube.com/PapoBinari
 Site: [https://professormesser.com/](https://professormesser.com/)  
 Canal: [https://www.youtube.com/professormesser/](https://www.youtube.com/professormesser/)  
 
-- Rob Braxman Tech
-Site: [https://brax.me/home/rob/](https://brax.me/home/rob/)
-Canal: [https://www.youtube.com/BraxMe/](https://www.youtube.com/BraxMe/)
+- Rob Braxman Tech  
+Site: [https://brax.me/home/rob/](https://brax.me/home/rob/)  
+Canal: [https://www.youtube.com/BraxMe/](https://www.youtube.com/BraxMe/)  
 
 Segurança cibernética:  
 
@@ -49,9 +49,9 @@ Canal: [https://www.youtube.com/HackerSploit/](https://www.youtube.com/HackerSpl
 Site: [https://desecsecurity.com/](https://desecsecurity.com/)  
 Canal: [https://www.youtube.com/ricardolongatto/](https://www.youtube.com/ricardolongatto/)
 
-- Rob Braxman Tech
-Site: [https://brax.me/home/rob/](https://brax.me/home/rob/)
-Canal: [https://www.youtube.com/BraxMe/](https://www.youtube.com/BraxMe/)
+- Rob Braxman Tech  
+Site: [https://brax.me/home/rob/](https://brax.me/home/rob/)  
+Canal: [https://www.youtube.com/BraxMe/](https://www.youtube.com/BraxMe/)  
 
 - The Cyber Mentor  
 Site: [https://thecybermentor.com/](https://thecybermentor.com/)  

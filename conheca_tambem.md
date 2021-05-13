@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Conheça também
-permalink: /conheca_tambem/
+title: Conheça
+permalink: /conheca/
 ---
 Linux, redes, desenvolvimento, infraestrutura, certificações:
 

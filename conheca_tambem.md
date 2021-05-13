@@ -1,6 +1,5 @@
 ---
-layout: allposts
-title: Conheça também
-description: Blog posts
+layout: page
+title: Conheca também
 permalink: /conheca_tambem/
 ---

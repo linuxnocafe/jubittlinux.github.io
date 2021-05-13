@@ -23,12 +23,8 @@ header_pages:
 footer_icons:
 - username: Terminal Root
   url: https://terminalroot.com.br/
-- username: Projeto Root
-  url: https://www.youtube.com/user/projetoroot
-- username: Rob Braxman Tech
-  url: https://www.youtube.com/c/BraxMe/featured
-- username: Cyberspatial
-  url: https://www.youtube.com/cyberspatial
+- username: Terminal Root TV
+  url: https://www.youtube.com/TerminalRootTV/
 
 paginate: 5
 

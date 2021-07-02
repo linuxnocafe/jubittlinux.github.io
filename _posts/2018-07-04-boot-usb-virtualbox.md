@@ -1,7 +1,7 @@
 ---
-title: Boot por usb no virtualbox - Host Linux
-description: Aprendar a dar boot por usb em máquina virtual no virtualbox.
-header: Boot por usb no virtualbox - Host Linux
+title: Boot por USB no VirtualBox - Host Linux
+description: Aprendar a dar boot por USB em máquina virtual no VirtualBox.
+header: Boot por USB no VirtualBox - Host Linux
 ---
 
 Um hipervisor, ou monitor de máquina virtual, é um software, firmware ou hardware que cria e roda máquinas virtuais (VMs). O computador no qual o hipervisor roda uma ou mais VMs é chamado de máquina hospedeira (host), e cada VM é chamada de máquina convidada (guest). [Wikipedia]

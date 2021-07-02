@@ -15,7 +15,7 @@ Se você quiser proteger o sistema antes do carregamento e evitar o uso da linha
 
 Para isso gere uma hash usando o algoritimo pbkdf2 através do seguinte comando:
 
-```console
+```bash
 $ grub-mkpasswd-pbkdf2  
 [...]
 Your PBKDF2 is grub.pbkdf2.sha512.10000.hashkey...

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Perguntas
+title: PERGUNTAS
 permalink: /perguntas/
 ---
 #### 1. De onde vem a palavra Linux?

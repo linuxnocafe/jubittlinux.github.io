@@ -15,18 +15,24 @@ Se você quiser proteger o sistema antes do carregamento e evitar o uso da linha
 
 Para isso gere uma hash usando o algoritimo pbkdf2 através do seguinte comando:
 
-> $ grub-mkpasswd-pbkdf2  
+```console
+$ grub-mkpasswd-pbkdf2  
 [...]
-Your PBKDF2 is grub.pbkdf2.sha512.10000.hashcriptografada
+Your PBKDF2 is grub.pbkdf2.sha512.10000.hashkey...
+```
 
 Então, adicione a hash gerada ao arquivo /etc/grub.d/40_custom:
 
-> set superusers="usuario"  
-password_pbkdf2 usuario grub.pbkdf2.sha512.10000.hashcriptografada
+```console
+set superusers="usuario"  
+password_pbkdf2 usuario grub.pbkdf2.sha512.10000.hashkey...
+```
 
 Agora, reconstrua suas entradas do GRUB:
 
-> $ sudo grub-mkconfig -o /boot/grub/grub.cfg
+```console
+$ sudo grub-mkconfig -o /boot/grub/grub.cfg
+```
 
 Pronto! Agora o GRUB solicitará senha para carregar o sistema e para permitir acesso ao menu de configuração.
 
@@ -35,19 +41,27 @@ Esta opção permite que o sistema carregue sem pedir senha, mas impede que alte
 
 Faça o procedimento da etapa acima, gerando a hash e adicionando-a ao /etc/grub.d/40_custom. Abra o arquivo /etc/grub.d/10_linux e adicione a opção "--unrestricted" à variável "CLASS".
 
-> $ sudo vi /etc/grub.d/10_linux
+```console
+$ sudo vi /etc/grub.d/10_linux
+```
 
 Procure pela variável "CLASS" (que deve estar no início do arquivo) escrita da seguinte forma:
 
-> CLASS="--class gnu-linux --class gnu --class os"
+```console
+CLASS="--class gnu-linux --class gnu --class os"
+```
 
 Adicione "--unrestricted":
 
-> CLASS="--unrestricted --class gnu-linux --class gnu --class os"
+```console
+CLASS="--unrestricted --class gnu-linux --class gnu --class os"
+```
 
 Reconstrua o GRUB:
 
-> $ sudo grub-mkconfig -o /boot/grub/grub.cfg
+```console
+$ sudo grub-mkconfig -o /boot/grub/grub.cfg
+```
 
 Pronto! O sistema carregará sem pedir senha mas o acesso ao console do GRUB e seus parâmetros estarão restritos.
 

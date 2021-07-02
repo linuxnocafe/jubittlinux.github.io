@@ -70,7 +70,7 @@ Embora o próprio PIP não seja atualizado com muita frequência, ainda é impor
 
 ```console
 $ pip install -U pip
-```console
+```
 
 Pode ser que você precise usar pip3 dependendo da versão de Python instalada em seu sistema. Fica assim:
 
@@ -135,5 +135,3 @@ Para remover completamente um pacote:
 ```console
 $ pip uninstall package-name  
 ```
-
-

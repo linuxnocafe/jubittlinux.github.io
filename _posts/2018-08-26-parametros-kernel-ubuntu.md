@@ -29,5 +29,5 @@ Na próxima inicialização o kernel deve carregar com o novo parâmetro. Para r
 Para verificar as mudanças aplicadas, você pode ver os parâmetros que o kernel carregou executando o seguinte comando:
 
 ```console
-> $ cat /proc/cmdline
+$ cat /proc/cmdline
 ```

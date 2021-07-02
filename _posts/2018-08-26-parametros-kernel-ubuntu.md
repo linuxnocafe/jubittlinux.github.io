@@ -1,7 +1,7 @@
 ---
-title: Adicionando parâmetros ao Kernel do Ubuntu
-description: Aprenda a passar parâmetros ao Kernel do Ubuntu.
-header: Adicionando parâmetros ao Kernel do Ubuntu
+title: Adicionando parâmetros ao kernel do Ubuntu
+description: Aprenda a passar parâmetros ao kernel do Ubuntu.
+header: Adicionando parâmetros ao kernel do Ubuntu
 ---
 
 Às vezes se faz necessário passar parâmetros para o kernel Linux. Por exemplo, para desabilitarmos a aceleração 3D de placas Nvidia que estejam usando Nouveau, no Ubuntu, podemos proceder como será mostrado neste tutorial.

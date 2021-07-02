@@ -1,7 +1,7 @@
 ---
 layout: page
 title: CONHECIMENTO
-permalink: /conheca/
+permalink: /conhecimento/
 ---
 Linux, redes, desenvolvimento, infraestrutura, certificações:
 

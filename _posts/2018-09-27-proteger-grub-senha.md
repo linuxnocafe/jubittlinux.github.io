@@ -11,6 +11,7 @@ Mas não esqueça de configurar também a bios ou uefi da máquina, caso contrá
 Veremos a seguir duas maneiras principais de proteger o GRUB.
 
 **Proteção do menu GRUB**  
+
 Se você quiser proteger o sistema antes do carregamento e evitar o uso da linha de comando é possível adicionar usuário/senha a um arquivo de configuração do GRUB.
 
 Para isso gere uma hash usando o algoritimo pbkdf2 através do seguinte comando:

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: CONHEÇA
+title: CONHECIMENTO
 permalink: /conheca/
 ---
 Linux, redes, desenvolvimento, infraestrutura, certificações:

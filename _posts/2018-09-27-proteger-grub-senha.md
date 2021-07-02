@@ -74,5 +74,5 @@ Pronto! O sistema carregará sem pedir senha mas o acesso ao console do GRUB e s
 
 Para saber mais:
 
-[Proteger GRUB com password - Arch Wiki](https://wiki.archlinux.org/index.php/GRUB/Tips_and_tricks#Password_protection_of_GRUB_edit_and_console_options_only){:target="_blank"} 
+[Proteger GRUB com password - Arch Wiki](https://wiki.archlinux.org/index.php/GRUB/Tips_and_tricks#Password_protection_of_GRUB_edit_and_console_options_only){:target="_blank"}  
 [Ubuntu - GRUB2](https://help.ubuntu.com/community/Grub2){:target="_blank"}

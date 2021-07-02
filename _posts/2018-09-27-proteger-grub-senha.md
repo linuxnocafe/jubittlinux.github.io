@@ -24,6 +24,12 @@ Your PBKDF2 is grub.pbkdf2.sha512.10000.hashkey...
 Então, adicione a hash gerada ao arquivo /etc/grub.d/40_custom:
 
 ```console
+#!/bin/sh
+exec tail -n +3 $0
+# This file provides an easy way to add custom menu entries.  Simply type the
+# menu entries you want to add after this comment.  Be careful not to change
+# the 'exec tail' line above.
+###### Adicionando o usuário e a hash gerada:
 set superusers="usuario"  
 password_pbkdf2 usuario grub.pbkdf2.sha512.10000.hashkey...
 ```
@@ -37,6 +43,7 @@ $ sudo grub-mkconfig -o /boot/grub/grub.cfg
 Pronto! Agora o GRUB solicitará senha para carregar o sistema e para permitir acesso ao menu de configuração.
 
 **Protegendo o GRUB somente contra edições e opções de console**  
+
 Esta opção permite que o sistema carregue sem pedir senha, mas impede que alterações sejam feitas no menu de configurações impedindo, assim, que o usuário digite comandos indesejados e invoque um shell, por exemplo.
 
 Faça o procedimento da etapa acima, gerando a hash e adicionando-a ao /etc/grub.d/40_custom. Abra o arquivo /etc/grub.d/10_linux e adicione a opção "--unrestricted" à variável "CLASS".
@@ -67,5 +74,5 @@ Pronto! O sistema carregará sem pedir senha mas o acesso ao console do GRUB e s
 
 Para saber mais:
 
-[Proteger GRUB com password - Arch Wiki](https://wiki.archlinux.org/index.php/GRUB/Tips_and_tricks#Password_protection_of_GRUB_edit_and_console_options_only)  
-[Ubuntu - GRUB2](https://help.ubuntu.com/community/Grub2)
+[Proteger GRUB com password - Arch Wiki](https://wiki.archlinux.org/index.php/GRUB/Tips_and_tricks#Password_protection_of_GRUB_edit_and_console_options_only){:target="_blank"} 
+[Ubuntu - GRUB2](https://help.ubuntu.com/community/Grub2){:target="_blank"}

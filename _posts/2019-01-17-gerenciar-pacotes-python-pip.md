@@ -13,11 +13,15 @@ Se você estiver usando o Python 2.7.9 (ou superior), o PIP vem instalado com o 
 
 Primeiramente vamos verificar se o python está instalado e em qual versão:
 
-> $ python --version
+```console
+$ python --version
+```
 
 Para verificar se a versão 3.X está presente:
 
-> $ python3 --version
+```console
+$ python3 --version
+```
 
 Se você obtiver um número de versão significa que o Python está pronto para ser usado.
 
@@ -27,75 +31,109 @@ O Linux já vem com Python instalado por padrão. Verifique a versão do Python 
 
 Instalando em Debian e derivados (Python 2.x):
 
-> $ sudo apt-get install python-pip
+```console
+$ sudo apt-get install python-pip
+```
 
 Instalando em Debian e derivados (Python 3.x):
 
+```console
 > $ sudo apt-get install python3-pip
+```
 
 Arch Linux (Python 2.x):
 
-> $ sudo pacman -S python2-pip
+```console
+$ sudo pacman -S python2-pip
+```
 
 Arch Linux(Python 3.x):
 
-> $ sudo pacman -S python-pip
+```console
+$ sudo pacman -S python-pip
+```
 
 CentOS (Python 2.x):
 
-> $ sudo yum upgrade python-setuptools  
+```console
+$ sudo yum upgrade python-setuptools  
 $ sudo yum install python-pip python-wheel
+```
 
 CentOS (Python 3.x):
 
-> $ sudo yum install python3 python3-wheel
+```console
+$ sudo yum install python3 python3-wheel
+```
 
 Embora o próprio PIP não seja atualizado com muita frequência, ainda é importante manter-se atualizado sobre as novas versões, pois pode haver correções importantes para bugs, compatibilidade e falhas de segurança. Felizmente, atualizar o PIP é muito rápido e simples.
 
-> $ pip install -U pip
+```console
+$ pip install -U pip
+```console
 
 Pode ser que você precise usar pip3 dependendo da versão de Python instalada em seu sistema. Fica assim:
 
-> $ pip install -U pip3
+```console
+$ pip install -U pip3
+```
 
 Os usuários do Python 2.x devem usar o pip enquanto os usuários do Python 3.x devem usar o pip3 ao emitir comandos PIP.
 
 Quando o PIP estiver pronto, você pode começar a instalar pacotes:
 
-> $ pip install package-name
+```console
+$ pip install package-name
+```
 
 Para instalar uma versão específica de um pacote em vez da versão mais recente:
 
-> $ pip install package-name==2.0.0
+```console
+$ pip install package-name==2.0.0
+```
 
 Para procurar por um pacote específico:
 
-> $ pip search package
+```console
+$ pip search package
+```
 
 Para ver detalhes sobre um pacote instalado:
 
-> $ pip show package-name
+```console
+$ pip show package-name
+```
 
 Para listar todos os pacotes instalados:
 
-> $ pip list
+```console
+$ pip list
+```
 
 Para listar todos os pacotes desatualizados:
 
-> $ pip list --outdated
+```console
+$ pip list --outdated
+```
 
 Para atualizar um pacote desatualizado:
 
-> $ pip install package-name --upgrade
+```console
+$ pip install package-name --upgrade
+```
 
 Observe que as versões mais antigas de um pacote são automaticamente removidas pelo PIP ao atualizar para uma versão mais recente desse pacote.
 
 Para reinstalar completamente um pacote:
 
-> $ pip install package-name --upgrade --force-reinstall
+```console
+$ pip install package-name --upgrade --force-reinstall
+```
 
 Para remover completamente um pacote:
 
-> $ pip uninstall package-name  
+```console
+$ pip uninstall package-name  
+```
 
 

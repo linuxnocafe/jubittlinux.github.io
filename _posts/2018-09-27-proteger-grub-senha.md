@@ -23,7 +23,7 @@ Your PBKDF2 is grub.pbkdf2.sha512.10000.hashkey...
 
 Então, adicione a hash gerada ao arquivo /etc/grub.d/40_custom:
 
-```console
+```bash
 #!/bin/sh
 exec tail -n +3 $0
 # This file provides an easy way to add custom menu entries.  Simply type the

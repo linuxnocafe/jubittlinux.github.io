@@ -14,12 +14,16 @@ Antes de instalar o KVM é necessário checar se o hardware do seu computador su
 
 Para checar digite no terminal:
 
-> $ LC_ALL=C lscpu \| grep Virtualization
+```console
+$ LC_ALL=C lscpu | grep Virtualization
+```
 
 Exemplo de saída:
 
-> $ LC_ALL=C lscpu | grep Virtualization  
+```bash
+$ LC_ALL=C lscpu | grep Virtualization  
 Virtualization:      VT-x
+```
 
 Se seu computador suportar virtualização a saída do comando deve ser "Virtualization: VT-x" ou "Virtualization: AMD-V".
 
@@ -31,13 +35,16 @@ Você também necessita ter o módulo do Kernel instalado no seu computador para
 
 No terminal digite o seguinte comando para verificar:
 
-> $ zgrep CONFIG_KVM /proc/config.gz
+```console
+$ zgrep CONFIG_KVM /proc/config.gz
+```
 
 Cheque a saída. Você deve ver CONFIG_KVM_INTEL ou CONFIG_KVM_AMD como 'm' ou 'y'. Abaixo a saída no meu PC:
 
-> $ zgrep CONFIG_KVM /proc/config.gz
+```bash
+$ zgrep CONFIG_KVM /proc/config.gz
 CONFIG_KVM_GUEST=y  
-\# CONFIG_KVM_DEBUG_FS is not set  
+# CONFIG_KVM_DEBUG_FS is not set  
 CONFIG_KVM_MMIO=y  
 CONFIG_KVM_ASYNC_PF=y  
 CONFIG_KVM_VFIO=y  
@@ -47,22 +54,29 @@ CONFIG_KVM=m
 CONFIG_KVM_INTEL=m  
 CONFIG_KVM_AMD=m  
 CONFIG_KVM_MMU_AUDIT=y  
+```
 
 Instalando o KVM (Virtual Machine Manager)
 
 Digite no terminal o seguinte comando:
 
-> $ sudo pacman -S virt-manager qemu vde2 ebtables dnsmasq bridge-utils openbsd-netcat
+```console
+$ sudo pacman -S virt-manager qemu vde2 ebtables dnsmasq bridge-utils openbsd-netcat
+```
 
 Os próximos dois passos são muito importantes e frequentemente ignorados por muitos usuários. Tenha certeza de concluí-los. Quando você executar o Virtual Machine Manager depois da instalação você verá o erro "adduser: The group 'libvirtd' does not exist".
 
 Habilite o serviço através do seguinte comando:
 
-> $ sudo systemctl enable libvirtd.service
+```console
+$ sudo systemctl enable libvirtd.service
+```
 
 Inicie o serviço através do seguinte comando:
 
-> $ sudo systemctl start libvirtd.service
+```console
+$ sudo systemctl start libvirtd.service
+```
 
 O Virtual Machine Manager agora deve estar instalado no seu computador. Você pode executá-lo procurando por "Virtual Machine Manager" nas suas aplicações, e não KVM!
 
@@ -70,12 +84,17 @@ O Virtual Machine Manager agora deve estar instalado no seu computador. Você po
 
 Caso em futuras execuções da máquina virtual você se depare com o erro "network 'default' is not active", execute os seguintes comandos:
 
-> $ sudo virsh net-list --all
+```console
+$ sudo virsh net-list --all
+```
 
-> $ sudo virsh net-autostart default
+```console
+$ sudo virsh net-autostart default
+```
 
+```console
 > $ sudo virsh net-start default
-
+```
 
 Para mais detalhes de troubleshooting consulte o seguinte link:  
-[http://ask.xmodulo.com/network-default-is-not-active.html](URL)
+[http://ask.xmodulo.com/network-default-is-not-active.html](https://www.xmodulo.com/network-default-is-not-active.html)

@@ -93,7 +93,7 @@ $ sudo virsh net-autostart default
 ```
 
 ```console
-> $ sudo virsh net-start default
+$ sudo virsh net-start default
 ```
 
 Para mais detalhes de troubleshooting consulte o seguinte link:  

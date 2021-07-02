@@ -8,7 +8,9 @@ Para instalar o Libreoffice no Solaris 11 precisamos adicionar um repositório c
 
 Para registrar um novo repositório execute com permissão de administrador:
 
-> \# pkg set-publisher -G '*' -g http://sfe.opencsw.org/localhosts11 localhosts11
+```console
+# pkg set-publisher -G '*' -g http://sfe.opencsw.org/localhosts11 localhosts11
+```
 
 Quando seu repositório estiver pronto você pode intalar o LibreOffice.
 
@@ -19,11 +21,15 @@ Escolha a opção que quer instalar.
 
 Para LibreOffice 5.2.x execute:
 
-> \# pkg install -v libreoffice52 libreoffice52-desktop-int
+```console
+# pkg install -v libreoffice52 libreoffice52-desktop-int
+```
 
 Para LibreOffice 4.4.x execute:
 
-> \# pkg install -v libreoffice4 libreoffice4-desktop-int
+```console
+# pkg install -v libreoffice4 libreoffice4-desktop-int
+```
 
 Durante a instalação o pkg irá instalar todas as bibliotecas necessárias e outros pacotes.
 
@@ -33,6 +39,10 @@ Quando a instalação acabar você pode iniciar o libreoffice do seu desktop: me
 
 Você pode checar se há atualizações executando o seguinte:
 
-> \# pkg refresh
+```console
+# pkg refresh
+```
 
-> \# pkg update -nv
+```console
+# pkg update -nv
+```

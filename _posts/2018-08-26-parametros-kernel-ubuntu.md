@@ -8,18 +8,26 @@ header: Adicionando parâmetros ao Kernel do Ubuntu
 
 No terminal digite:
 
-> $ sudo vi /etc/default/grub  
+```console
+$ sudo vi /etc/default/grub  
+```
 
 Ache a linha que comece com GRUB_CMDLINE_LINUX_DEFAULT e adicione ao final nouveau.noaccel=1. Como a seguir:
 
-> GRUB_CMDLINE_LINUX_DEFAULT="quiet splash nouveau.noaccel=1"  
+```console
+GRUB_CMDLINE_LINUX_DEFAULT="quiet splash nouveau.noaccel=1"  
+```
 
 Por final, atualize o grub:
 
-> $ sudo update-grub  
+```console
+$ sudo update-grub  
+```
 
 Na próxima inicialização o kernel deve carregar com o novo parâmetro. Para remover o parâmetro de forma permanente edite novamente o arquivo e apague o que foi inserido. Atualize o grub novamente.
 
 Para verificar as mudanças aplicadas, você pode ver os parâmetros que o kernel carregou executando o seguinte comando:
 
+```console
 > $ cat /proc/cmdline
+```

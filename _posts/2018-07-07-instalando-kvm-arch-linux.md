@@ -97,4 +97,4 @@ $ sudo virsh net-start default
 ```
 
 Para mais detalhes de troubleshooting consulte o seguinte link:  
-[http://ask.xmodulo.com/network-default-is-not-active.html](https://www.xmodulo.com/network-default-is-not-active.html)
+[http://ask.xmodulo.com/network-default-is-not-active.html](https://www.xmodulo.com/network-default-is-not-active.html){:target="_blank"}

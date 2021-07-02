@@ -38,7 +38,7 @@ $ sudo apt-get install python-pip
 Instalando em Debian e derivados (Python 3.x):
 
 ```console
-> $ sudo apt-get install python3-pip
+$ sudo apt-get install python3-pip
 ```
 
 Arch Linux (Python 2.x):

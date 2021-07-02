@@ -47,7 +47,7 @@ $ sudo vi /etc/grub.d/10_linux
 
 Procure pela variável "CLASS" (que deve estar no início do arquivo) escrita da seguinte forma:
 
-```shell
+```console
 CLASS="--class gnu-linux --class gnu --class os"
 ```
 

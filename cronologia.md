@@ -1,6 +1,6 @@
 ---
 layout: allposts
-title: Cronologia
+title: CRONOLOGIA
 description: Blog posts
 permalink: /cronologia/
 ---

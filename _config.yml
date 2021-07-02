@@ -20,9 +20,9 @@ header_pages:
 - contato.md
 
 footer_icons:
-- username: Terminal Root
+- username: TERMINAL ROOT
   url: https://terminalroot.com.br/
-- username: Terminal Root TV
+- username: TERMINAL ROOT TV
   url: https://www.youtube.com/TerminalRootTV/
 
 paginate: 5

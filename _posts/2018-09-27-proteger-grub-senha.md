@@ -23,7 +23,7 @@ Your PBKDF2 is grub.pbkdf2.sha512.10000.hashkey...
 
 Então, adicione a hash gerada ao arquivo /etc/grub.d/40_custom:
 
-```console
+```bash
 set superusers="usuario"  
 password_pbkdf2 usuario grub.pbkdf2.sha512.10000.hashkey...
 ```
@@ -47,13 +47,13 @@ $ sudo vi /etc/grub.d/10_linux
 
 Procure pela variável "CLASS" (que deve estar no início do arquivo) escrita da seguinte forma:
 
-```console
+```bash
 CLASS="--class gnu-linux --class gnu --class os"
 ```
 
 Adicione "--unrestricted":
 
-```console
+```bash
 CLASS="--unrestricted --class gnu-linux --class gnu --class os"
 ```
 

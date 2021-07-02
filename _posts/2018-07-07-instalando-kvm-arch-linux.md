@@ -56,7 +56,7 @@ CONFIG_KVM_AMD=m
 CONFIG_KVM_MMU_AUDIT=y  
 ```
 
-Instalando o KVM (Virtual Machine Manager)
+**Instalando o KVM (Virtual Machine Manager)**
 
 Digite no terminal o seguinte comando:
 
